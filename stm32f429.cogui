@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench version="2.0">
+<workbenchAdvisor/>
+<window>
+<fastViewData fastViewLocation="1024">
+<orientation position="512" view="org.eclipse.debug.ui.ExpressionView"/>
+<orientation position="512" view="org.coocox.codebugger.trace.ui.traceview"/>
+<orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
+<orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
+</fastViewData>
+<perspectiveBar/>
+<page focus="true" label="Workspace - CooCox CoBuilder">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.c" partName="pinky.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.c" title="pinky.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/pinky.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="player.c" partName="player.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.c" title="player.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/player.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7656" selectionTopPixel="5294"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="maze.c" partName="maze.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze.c" title="maze.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/maze.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5610" selectionTopPixel="4000"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="maze_generate.c" partName="maze_generate.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze_generate.c" title="maze_generate.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze_generate.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/maze_generate.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="12432" selectionTopPixel="86"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="skin.c" partName="skin.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/skin.c" title="skin.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/skin.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/skin.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="570"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gui.c" partName="gui.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.c" title="gui.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/gui.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="145" selectionTopPixel="13580"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.h" partName="pinky.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.h" title="pinky.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/pinky.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="player.h" partName="player.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.h" title="player.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/player.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="inky.c" partName="inky.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.c" title="inky.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/inky.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="inky.h" partName="inky.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.h" title="inky.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/inky.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gui.h" partName="gui.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.h" title="gui.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/gui.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.h" partName="clyde.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/clyde.h" title="clyde.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/clyde.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/clyde.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pacman.c" partName="pacman.c" path="C:/Users/anhttv24/Downloads/project-embedded-system-main/project-embedded-system-main/ubpacman_lib/pacman.c" title="pacman.c" tooltip="C:/Users/anhttv24/Downloads/project-embedded-system-main/project-embedded-system-main/ubpacman_lib/pacman.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/pacman.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10891" selectionTopPixel="5797"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Skin1.c" partName="Skin1.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/bilder/Skin1.c" title="Skin1.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/bilder/Skin1.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ub_lib/bilder/Skin1.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="750"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_usb_hid_host.c" partName="stm32_ub_usb_hid_host.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/stm32_ub_usb_hid_host.c" title="stm32_ub_usb_hid_host.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/stm32_ub_usb_hid_host.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ub_lib/stm32_ub_usb_hid_host.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bot.c" partName="bot.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/bot.c" title="bot.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/bot.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/bot.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1627" selectionTopPixel="330"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="blinky.c" partName="blinky.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/blinky.c" title="blinky.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/blinky.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/blinky.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6012" selectionTopPixel="6085"/>
+</editor>
+<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</input>
+</editor>
+<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">
+<subPage horizontalPosition="0" selectedItemId="54" subPageIndex="2" verticalPosition="0"/>
+</input>
+</editor>
+</editors>
+<views>
+<view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
+<expanded>
+<element path="/stm32f429"/>
+<element path="/stm32f429/syscalls"/>
+<element path="/stm32f429/ubpacman_lib"/>
+</expanded>
+<selection>
+<element path="/stm32f429/ubpacman_lib/bot.c"/>
+</selection>
+</viewState>
+</view>
+<view id="org.coocox.component.ui.ComponentView" partName="Components">
+<viewState/>
+</view>
+<view id="org.coocox.builder.ui.exampleView" partName="C Library Examples">
+<viewState>
+<Examples ComponentId="30" Title="C Library"/>
+</viewState>
+</view>
+<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.coocox.component.ui.Help" partName="Help">
+<viewState/>
+</view>
+</views>
+<perspectives activePart="org.coocox.builder.ui.editors.repository.RepositoryBrowser" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.coocox.userspace.actionSet"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.ShowDisassemblyAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showExpressionsAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showDebugAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showConsoleAction"/>
+<hide_menu_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryBrowserAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showVariablesAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.openProjectExplorerAction"/>
+<hide_menu_item_id id="org.coocox.codebugger.trace.actions.ShowTraceControlAction"/>
+<hide_menu_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
+<hide_menu_item_id id="org.coocox.codebugger.configuration.showRegistersAction"/>
+<hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
+<view id="org.coocox.component.ui.ComponentView"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<view id="org.coocox.component.ui.Help"/>
+<view id="org.coocox.builder.ui.exampleView"/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@8c87a8" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="1.2592592"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@c744e3">
+<folder activePageID="org.coocox.component.ui.ComponentView" appearance="2" expanded="2">
+<page content="org.coocox.component.ui.ComponentView" label="Components"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7497309" ratioLeft="1393" ratioRight="465" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c744e3">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@8c87a8" ratio="0.7714581" ratioLeft="746" ratioRight="221" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@f60379" ratio="0.21959096" ratioLeft="408" ratioRight="1450" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c744e3">
+<folder activePageID="org.coocox.builder.ui.exampleView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.exampleView" label="C Library Examples"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@15209bd" ratio="0.72" ratioLeft="1044" ratioRight="406" relationship="2" relative="org.eclipse.ui.internal.ViewStack@f60379">
+<folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
+<page content="org.coocox.component.ui.Help" label="Help"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
+<page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.4490446" ratioLeft="423" ratioRight="519" relationship="4" relative="org.eclipse.ui.internal.ViewStack@f60379"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@180f788" ratio="0.5" ratioLeft="752" ratioRight="752" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7bbb7c" ratio="0.16152598" ratioLeft="199" ratioRight="1033" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.coocox.codebugger.configuration.ui.Perspective" id="org.coocox.codebugger.configuration.perspective" label="CoDebugger"/>
+<alwaysOnActionSet id="org.coocox.builder.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFolder"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_menu_item_id id="org.eclipse.ui.file.save"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAll"/>
+<hide_menu_item_id id="org.coocox.builder.ui.openFile"/>
+<hide_menu_item_id id="org.eclipse.ui.file.saveAs"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.projectMenu"/>
+<hide_menu_item_id id="org.coocox.builder.rcp.flashMenu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.debug"/>
+<hide_menu_item_id id="org.coocox.builder.ui.showHelpViewAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_menu_item_id id="org.coocox.builder.ui.showHelpViewAction1"/>
+<hide_menu_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_menu_item_id id="org.coocox.builder.ui.builderDefaultLayout"/>
+<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
+<hide_menu_item_id id="org.coocox.builder.ui.build"/>
+<hide_menu_item_id id="org.coocox.builder.ui.showOutlineAction"/>
+<hide_menu_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_menu_item_id id="org.coocox.builder.ui.showPeripheralsAction"/>
+<hide_menu_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.TargetManageAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newProject"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.repository"/>
+<hide_toolbar_item_id id="org.eclipse.ui.file.save"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.rebuild"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideFlashEraseAction"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.debug"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.newFile"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.actions.ConfigurationAction"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
+<hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
+<hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.coocox.codebugger.trace.ui.traceview"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<fastViewBars/>
+<viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@1c5e2ac">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1c5e2ac">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1645c13" ratio="0.87383664" ratioLeft="845" ratioRight="122" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1c5e2ac">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d924bc" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1645c13">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@fabdd8" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1c5e2ac">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.29986054" ratioLeft="430" ratioRight="1004" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1c5e2ac"/>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/maze.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/pinky.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/player.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/skin.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ub_lib/stm32_ub_touch_stmpe811.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ub_lib/bilder/Skin1.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/maze.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/maze_generate.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/skin.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ub_lib/stm32_ub_usb_hid_host.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/gui.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/pinky.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/player.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/inky.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/inky.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/gui.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/clyde.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/pacman.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/bot.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/blinky.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
+<subPage horizontalPosition="0" selectedItemId="54" subPageIndex="2" verticalPosition="0"/>
+</editor>
+</editors>
+<item historyLabel="skin.c" index="3">
+<position/>
+</item>
+<item historyLabel="Skin1.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="skin.c" index="3">
+<position/>
+</item>
+<item historyLabel="stm32_ub_touch_stmpe811.c" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="maze.c" index="0">
+<position info="not_deleted" x="2596" y="0"/>
+</item>
+<item historyLabel="player.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="skin.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="maze.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="maze_generate.c" index="7">
+<position info="not_deleted" x="15598" y="0"/>
+</item>
+<item historyLabel="skin.c" index="3">
+<position info="not_deleted" x="5428" y="0"/>
+</item>
+<item historyLabel="player.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="maze_generate.c" index="7">
+<position info="not_deleted" x="15598" y="0"/>
+</item>
+<item historyLabel="player.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="maze.c" index="0">
+<position/>
+</item>
+<item historyLabel="maze_generate.c" index="7">
+<position info="not_deleted" x="874" y="0"/>
+</item>
+<item historyLabel="skin.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32_ub_usb_hid_host.c" index="9">
+<position info="not_deleted" x="1381" y="412"/>
+</item>
+<item historyLabel="skin.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="gui.c" index="10">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="pinky.c" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pinky.h" index="11">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="player.c" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="player.h" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="skin.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="inky.c" index="13">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="inky.h" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="gui.h" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="gui.c" index="10">
+<position info="not_deleted" x="145" y="0"/>
+</item>
+<item historyLabel="clyde.h" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="maze_generate.c" index="7">
+<position info="not_deleted" x="874" y="0"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="4345" y="0"/>
+</item>
+<item historyLabel="maze_generate.c" index="7">
+<position info="not_deleted" x="874" y="0"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="4345" y="0"/>
+</item>
+<item historyLabel="skin.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Skin1.c" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="stm32_ub_usb_hid_host.c" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="bot.c" index="18">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="blinky.c" index="19">
+<position info="not_deleted" x="6012" y="0"/>
+</item>
+<item historyLabel="player.c" index="2">
+<position info="not_deleted" x="7656" y="0"/>
+</item>
+<item historyLabel="bot.c" index="18">
+<position info="not_deleted" x="1627" y="0"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="4345" y="0"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="3136" y="0"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="1853" y="0"/>
+</item>
+<item historyLabel="maze_generate.c" index="7">
+<position info="not_deleted" x="12432" y="19"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="1853" y="0"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="2741" y="0"/>
+</item>
+<item historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="6045" y="11"/>
+</item>
+<item historyLabel="Configuration" index="20"/>
+<item historyLabel="Repository" index="21"/>
+<item active="true" historyLabel="pacman.c" index="17">
+<position info="not_deleted" x="10891" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+</window>
+<mruList>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>
+<subPage horizontalPosition="0" selectedItemId="54" subPageIndex="2" verticalPosition="0"/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pacman.c" tooltip="stm32f429/ubpacman_lib/pacman.c">
+<persistable path="/stm32f429/ubpacman_lib/pacman.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gui.c" tooltip="stm32f429/ubpacman_lib/gui.c">
+<persistable path="/stm32f429/ubpacman_lib/gui.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.c" tooltip="stm32f429/ubpacman_lib/clyde.c">
+<persistable path="/stm32f429/ubpacman_lib/clyde.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inky.c" tooltip="stm32f429/ubpacman_lib/inky.c">
+<persistable path="/stm32f429/ubpacman_lib/inky.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.c" tooltip="stm32f429/ubpacman_lib/pinky.c">
+<persistable path="/stm32f429/ubpacman_lib/pinky.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="blinky.c" tooltip="stm32f429/ubpacman_lib/blinky.c">
+<persistable path="/stm32f429/ubpacman_lib/blinky.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="player.c" tooltip="stm32f429/ubpacman_lib/player.c">
+<persistable path="/stm32f429/ubpacman_lib/player.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menu.h" tooltip="stm32f429/ubpacman_lib/menu.h">
+<persistable path="/stm32f429/ubpacman_lib/menu.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menu.c" tooltip="stm32f429/ubpacman_lib/menu.c">
+<persistable path="/stm32f429/ubpacman_lib/menu.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.h" tooltip="stm32f429/ubpacman_lib/pinky.h">
+<persistable path="/stm32f429/ubpacman_lib/pinky.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inky.h" tooltip="stm32f429/ubpacman_lib/inky.h">
+<persistable path="/stm32f429/ubpacman_lib/inky.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.h" tooltip="stm32f429/ubpacman_lib/clyde.h">
+<persistable path="/stm32f429/ubpacman_lib/clyde.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="blinky.h" tooltip="stm32f429/ubpacman_lib/blinky.h">
+<persistable path="/stm32f429/ubpacman_lib/blinky.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="maze.c" tooltip="stm32f429/ubpacman_lib/maze.c">
+<persistable path="/stm32f429/ubpacman_lib/maze.c"/>
+</file>
+</mruList>
+</workbench>
