@@ -1,4 +1,6 @@
 #include "maze.h"
+#include "random.h"
+#include "stm32_ub_font.h"
 
 #include "maze_generate.h"
 
@@ -61,14 +63,12 @@ void maze_make_rooms(void) {
     maze_generate_digpath_h(9, 26, 4, ROOM_POINTS_NORMAL);
     maze_generate_digpath_h(15, 26, 4, ROOM_POINTS_NORMAL);
     maze_generate_digpath_h(21, 26, 6, ROOM_POINTS_NORMAL);
-    maze_generate_digpath_h(1, 29, 24, ROOM_POINTS_NORMAL);
-    maze_generate_digpath_h(1, 29, 1, ROOM_POINTS_ENERGY);
+    maze_generate_digpath_h(1, 29, 26, ROOM_POINTS_NORMAL);
 
     //------------------------------
     // 2b. dig pathes through the walls
     // vertikal and set doors and points
     //------------------------------
-    
     maze_generate_digpath_v(1, 1, 8, ROOM_POINTS_NORMAL);
     maze_generate_digpath_v(6, 1, 26, ROOM_POINTS_NORMAL);
     maze_generate_digpath_v(12, 1, 5, ROOM_POINTS_NORMAL);
@@ -139,6 +139,25 @@ void maze_make_rooms(void) {
     //------------------------------
     Maze.Room[13][23].points = ROOM_POINTS_NONE;
     Maze.Room[14][23].points = ROOM_POINTS_NONE;
+
+    //------------------------------
+    // 9. choose 4 random rooms for the energy points
+    //------------------------------
+    int count_energy = 0;
+    while(count_energy < 4){
+        random_init();
+        uint32_t x = get_randrange(1, 26);
+        uint32_t y = get_randrange(1, 26);
+        // char buf[20];
+        // sprintf(buf, "x: %d, y: %d", x, y);
+        // UB_Font_DrawString(0, 0, buf, &Arial_7x10, 0x0000, 0xFFFF);
+        if (Maze.Room[x][y].points == ROOM_POINTS_NORMAL) {
+            Maze.Room[x][y].points = ROOM_POINTS_ENERGY;
+            count_energy++;
+        }
+    }
+
+
 
 }
 

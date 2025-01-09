@@ -45,11 +45,11 @@ void UB_Font_DrawChar(uint16_t x, uint16_t y, uint8_t ascii, UB_Font *font, uint
       UB_LCD_SetCursor2Draw(x,yn+y);
       for(xn = 0; xn < font->width; xn++) {
         if((wert[yn] & maske) == 0x00) {
-          // Pixel in Hintergrundfarbe zeichnen
+          // Vẽ pixel với màu nền
           UB_LCD_DrawPixel(bg);
         }
         else {
-          // Pixel in Vordergrundfarbe zeichnen
+          // Vẽ pixel với màu chữ
           UB_LCD_DrawPixel(vg);
         }
         maske=(maske>>1);
@@ -81,9 +81,9 @@ void UB_Font_DrawChar(uint16_t x, uint16_t y, uint8_t ascii, UB_Font *font, uint
 
 
 //--------------------------------------------------------------
-// Zeichnet einen String eines Fonts an x,y Position
-// mit Vorder- und Hintergrundfarbe (Font = max 16 Pixel breite)
-// -> Font muss mit &-Operator uebergeben werden
+// Vẽ một chuỗi ký tự của một font tại vị trí x,y
+// với màu nền và màu chữ (Font = chiều rộng tối đa 16 pixel)
+// -> Font phải được truyền với toán tử &
 //--------------------------------------------------------------
 void UB_Font_DrawString(uint16_t x, uint16_t y,char *ptr, UB_Font *font, uint16_t vg, uint16_t bg)
 {

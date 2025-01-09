@@ -9,111 +9,6 @@
 <orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
 </fastViewData>
 <perspectiveBar/>
-<page label="Workspace - CooCox CoBuilder">
-<editors>
-<editorArea activeWorkbook="DefaultEditorWorkbook">
-<info part="DefaultEditorWorkbook">
-<folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
-</folder>
-</info>
-</editorArea>
-</editors>
-<views>
-<view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0"/>
-</view>
-<view id="org.coocox.component.ui.ComponentView" partName="Components">
-<viewState/>
-</view>
-<view id="org.coocox.component.ui.Help" partName="Help">
-<viewState/>
-</view>
-</views>
-<perspectives activePerspective="org.coocox.builder.perspective.CoBuilder">
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor class="org.coocox.builder.rcp.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
-<alwaysOnActionSet id="org.coocox.builder.ui.actionSet"/>
-<alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
-<alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showConsoleAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showDebugAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.ShowDisassemblyAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showExpressionsAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.trace.actions.ShowTraceControlAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryBrowserAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showOutlineAction"/>
-<hide_menu_item_id id="org.coocox.builder.ui.openProjectExplorerAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showRegistersAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showPeripheralsAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.showVariablesAction"/>
-<hide_menu_item_id id="org.coocox.codebugger.configuration.restoreLayoutAction"/>
-<hide_menu_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
-<hide_menu_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
-<hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
-<hide_menu_item_id id="org.eclipse.jdt.ui.source.menu"/>
-<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
-<hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.coocox.component.ui.ComponentView"/>
-<view id="org.coocox.builder.ui.views.ProjectView"/>
-<view id="org.coocox.component.ui.Help"/>
-<fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@cb560b">
-<folder activePageID="org.coocox.component.ui.ComponentView" appearance="2" expanded="2">
-<page content="org.coocox.component.ui.ComponentView" label="Components"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="2154" ratioRight="718" relationship="2" relative="org.eclipse.ui.internal.ViewStack@cb560b">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-</folder>
-</info>
-<info part="org.eclipse.ui.console.ConsoleView" ratio="0.6996149" ratioLeft="1090" ratioRight="468" relationship="4" relative="org.eclipse.ui.internal.ViewStack@cb560b"/>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.21970752" ratioLeft="631" ratioRight="2241" relationship="2" relative="org.eclipse.ui.internal.ViewStack@cb560b"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@16c65a9" ratio="0.719768" ratioLeft="1613" ratioRight="628" relationship="2" relative="org.coocox.builder.ui.exampleView">
-<folder activePageID="org.coocox.component.ui.Help" appearance="2" expanded="2">
-<page content="org.coocox.component.ui.Help" label="Help"/>
-<page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
-<page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
-<page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info part="org.eclipse.ui.editorss" ratio="0.44993582" ratioLeft="701" ratioRight="857" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@17e107c" ratio="0.36970475" ratioLeft="576" ratioRight="982" relationship="4" relative="org.eclipse.ui.internal.ViewStack@cb560b">
-<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
-<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
-</folder>
-</info>
-</mainWindow>
-</layout>
-</perspective>
-</perspectives>
-<workingSets/>
-<navigationHistory/>
-<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
-</page>
 <page focus="true" label="Workspace - CooCox CoBuilder">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
@@ -121,109 +16,14 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-<part id="18"/>
-<part id="19"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.c" partName="pinky.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.c" title="pinky.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/pinky.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="player.c" partName="player.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.c" title="player.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/player.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7656" selectionTopPixel="5294"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="maze.c" partName="maze.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze.c" title="maze.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/maze.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5610" selectionTopPixel="4000"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="maze_generate.c" partName="maze_generate.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze_generate.c" title="maze_generate.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/maze_generate.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/maze_generate.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="12432" selectionTopPixel="86"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="skin.c" partName="skin.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/skin.c" title="skin.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/skin.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/skin.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="570"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gui.c" partName="gui.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.c" title="gui.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/gui.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="145" selectionTopPixel="13580"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.h" partName="pinky.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.h" title="pinky.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/pinky.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/pinky.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="player.h" partName="player.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.h" title="player.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/player.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/player.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="inky.c" partName="inky.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.c" title="inky.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/inky.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="inky.h" partName="inky.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.h" title="inky.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/inky.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/inky.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="gui.h" partName="gui.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.h" title="gui.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/gui.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/gui.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.h" partName="clyde.h" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/clyde.h" title="clyde.h" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/clyde.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/clyde.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="pacman.c" partName="pacman.c" path="C:/Users/anhttv24/Downloads/project-embedded-system-main/project-embedded-system-main/ubpacman_lib/pacman.c" title="pacman.c" tooltip="C:/Users/anhttv24/Downloads/project-embedded-system-main/project-embedded-system-main/ubpacman_lib/pacman.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/pacman.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10891" selectionTopPixel="5797"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="Skin1.c" partName="Skin1.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/bilder/Skin1.c" title="Skin1.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/bilder/Skin1.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ub_lib/bilder/Skin1.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="750"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_usb_hid_host.c" partName="stm32_ub_usb_hid_host.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/stm32_ub_usb_hid_host.c" title="stm32_ub_usb_hid_host.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ub_lib/stm32_ub_usb_hid_host.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ub_lib/stm32_ub_usb_hid_host.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="bot.c" partName="bot.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/bot.c" title="bot.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/bot.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/bot.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1627" selectionTopPixel="330"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="blinky.c" partName="blinky.c" path="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/blinky.c" title="blinky.c" tooltip="C:/Users/HP PAVILION/Desktop/Nhungs/Show_07_PacMan/ubpacman_lib/blinky.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ubpacman_lib/blinky.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6012" selectionTopPixel="6085"/>
-</editor>
-<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">&#x0A;<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+<editor activePart="true" focus="true" id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="313"/>
 </input>
-</editor>
-<editor id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" partName="Repository" title="Repository" tooltip="Repository" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory">
-<subPage horizontalPosition="0" selectedItemId="504" subPageIndex="0" verticalPosition="0"/>
-</input>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/embed-system/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/embed-system/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="249" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -232,20 +32,18 @@
 <expanded>
 <element path="/stm32f429"/>
 <element path="/stm32f429/syscalls"/>
-<element path="/stm32f429/ubpacman_lib"/>
 </expanded>
 <selection>
-<element path="/stm32f429/main.c"/>
+<element path="/stm32f429"/>
 </selection>
 </viewState>
 </view>
-<view id="org.coocox.component.ui.ComponentView" partName="Components">
-<viewState/>
+<view id="org.coocox.builder.ui.exampleView" partName="Example Examples">
+<viewState>
+<Examples ComponentId="0" Title="Example"/>
+</viewState>
 </view>
 <view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
-<viewState/>
-</view>
-<view id="org.coocox.builder.ui.exampleView" partName="Example">
 <viewState/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -261,9 +59,9 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.coocox.builder.ui.views.ProjectView" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor class="org.coocox.builder.rcp.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
+<descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
 <alwaysOnActionSet id="org.coocox.welcome.ui.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
@@ -273,7 +71,7 @@
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
-<alwaysOnActionSet id="org.coocox.builder.ui.actionSet"/>
+<alwaysOnActionSet id="org.coocox.userspace.actionSet"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryAction"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.ShowDisassemblyAction"/>
@@ -291,25 +89,17 @@
 <hide_toolbar_item_id id="org.eclipse.cdt.debug.internal.ui.actions.ToggleInstructionStepModeAction"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
-<view id="org.coocox.component.ui.ComponentView"/>
-<view id="org.coocox.builder.ui.views.ProjectView"/>
-<view id="org.coocox.component.ui.Help"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.coocox.builder.ui.exampleView"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@8c87a8" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
-<fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="1.2592592"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.coocox.component.ui.Help"/>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@c744e3">
-<folder activePageID="org.coocox.component.ui.ComponentView" appearance="2" expanded="2">
-<page content="org.coocox.component.ui.ComponentView" label="Components"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="2">
+<page content="org.coocox.component.ui.ComponentView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.7497309" ratioLeft="1393" ratioRight="465" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c744e3">
@@ -319,14 +109,16 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@8c87a8" ratio="0.7714581" ratioLeft="746" ratioRight="221" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@f60379" ratio="0.21959096" ratioLeft="408" ratioRight="1450" relationship="2" relative="org.eclipse.ui.internal.ViewStack@c744e3">
 <folder activePageID="org.coocox.builder.ui.exampleView" appearance="2" expanded="2">
-<page content="org.coocox.builder.ui.exampleView" label="Example"/>
+<page content="org.coocox.builder.ui.exampleView" label="Example Examples"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 </presentation>
@@ -351,7 +143,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7bbb7c" ratio="0.16152598" ratioLeft="199" ratioRight="1033" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7bbb7c" ratio="0.35655254" ratioLeft="302" ratioRight="545" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
 <folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
 <page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -460,26 +252,23 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/maze.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/pinky.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/player.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/skin.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ub_lib/stm32_ub_touch_stmpe811.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/maze.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/pinky.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/player.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ub_lib/bilder/Skin1.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/maze.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/maze_generate.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/skin.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/maze_generate.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/skin.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ub_lib/stm32_ub_usb_hid_host.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/gui.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/pinky.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/player.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/inky.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/inky.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/gui.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/clyde.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/pacman.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/bot.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ubpacman_lib/blinky.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/gui.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/pinky.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/player.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/inky.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/inky.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/gui.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/clyde.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/pacman.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/bot.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/blinky.c"/>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
 <org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
 </editor>
@@ -490,151 +279,157 @@
 <subPage horizontalPosition="0" selectedItemId="504" subPageIndex="0" verticalPosition="0"/>
 </editor>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/main.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/pinky.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/bot.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/pinky.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="6" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="313"/>
+</editor>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="313"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/pacman_lib/maze_generate.c"/>
 </editors>
-<item historyLabel="skin.c" index="3">
-<position/>
-</item>
-<item historyLabel="stm32_ub_touch_stmpe811.c" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="maze.c" index="0">
-<position info="not_deleted" x="2596" y="0"/>
-</item>
-<item historyLabel="player.c" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="skin.c" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="maze.h" index="6">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="maze_generate.c" index="7">
-<position info="not_deleted" x="15598" y="0"/>
-</item>
-<item historyLabel="skin.c" index="3">
-<position info="not_deleted" x="5428" y="0"/>
-</item>
-<item historyLabel="player.c" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="maze_generate.c" index="7">
-<position info="not_deleted" x="15598" y="0"/>
-</item>
 <item historyLabel="player.c" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="maze.c" index="0">
 <position/>
 </item>
-<item historyLabel="maze_generate.c" index="7">
+<item historyLabel="maze_generate.c" index="4">
 <position info="not_deleted" x="874" y="0"/>
 </item>
-<item historyLabel="skin.c" index="8">
+<item historyLabel="skin.c" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stm32_ub_usb_hid_host.c" index="9">
+<item historyLabel="stm32_ub_usb_hid_host.c" index="6">
 <position info="not_deleted" x="1381" y="412"/>
 </item>
-<item historyLabel="skin.c" index="8">
+<item historyLabel="skin.c" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="gui.c" index="10">
+<item historyLabel="gui.c" index="7">
 <position info="not_deleted" x="145" y="0"/>
 </item>
 <item historyLabel="pinky.c" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="pinky.h" index="11">
+<item historyLabel="pinky.h" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="player.c" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="player.h" index="12">
+<item historyLabel="player.h" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="skin.c" index="8">
+<item historyLabel="skin.c" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="inky.c" index="13">
+<item historyLabel="inky.c" index="10">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="inky.h" index="14">
+<item historyLabel="inky.h" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="gui.h" index="15">
+<item historyLabel="gui.h" index="12">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="gui.c" index="10">
+<item historyLabel="gui.c" index="7">
 <position info="not_deleted" x="145" y="0"/>
 </item>
-<item historyLabel="clyde.h" index="16">
+<item historyLabel="clyde.h" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="maze_generate.c" index="7">
+<item historyLabel="maze_generate.c" index="4">
 <position info="not_deleted" x="874" y="0"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="4345" y="0"/>
 </item>
-<item historyLabel="maze_generate.c" index="7">
+<item historyLabel="maze_generate.c" index="4">
 <position info="not_deleted" x="874" y="0"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="4345" y="0"/>
 </item>
-<item historyLabel="skin.c" index="8">
+<item historyLabel="skin.c" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Skin1.c" index="5">
+<item historyLabel="Skin1.c" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stm32_ub_usb_hid_host.c" index="9">
+<item historyLabel="stm32_ub_usb_hid_host.c" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="bot.c" index="18">
+<item historyLabel="bot.c" index="15">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="blinky.c" index="19">
+<item historyLabel="blinky.c" index="16">
 <position info="not_deleted" x="6012" y="0"/>
 </item>
 <item historyLabel="player.c" index="2">
 <position info="not_deleted" x="7656" y="0"/>
 </item>
-<item historyLabel="bot.c" index="18">
+<item historyLabel="bot.c" index="15">
 <position info="not_deleted" x="1627" y="0"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="4345" y="0"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="3136" y="0"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="1853" y="0"/>
 </item>
-<item historyLabel="maze_generate.c" index="7">
+<item historyLabel="maze_generate.c" index="4">
 <position info="not_deleted" x="12432" y="19"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="1853" y="0"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="2741" y="0"/>
 </item>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="6045" y="11"/>
 </item>
-<item historyLabel="Configuration" index="20"/>
-<item historyLabel="Repository" index="21"/>
-<item historyLabel="pacman.c" index="17">
+<item historyLabel="Configuration" index="17"/>
+<item historyLabel="Repository" index="18"/>
+<item historyLabel="pacman.c" index="14">
 <position info="not_deleted" x="10891" y="0"/>
 </item>
-<item historyLabel="Repository" index="22"/>
-<item active="true" historyLabel="main.c" index="23">
+<item historyLabel="Repository" index="19"/>
+<item historyLabel="main.c" index="20">
+<position info="not_deleted" x="516" y="0"/>
+</item>
+<item historyLabel="pinky.c" index="21">
 <position info="not_deleted" x="0" y="0"/>
 </item>
+<item historyLabel="bot.c" index="22">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pinky.c" index="21">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pinky.c" index="23">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Configuration" index="24"/>
+<item historyLabel="Configuration" index="25"/>
+<item historyLabel="Configuration" index="26"/>
+<item historyLabel="Configuration" index="27"/>
+<item historyLabel="maze_generate.c" index="28">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="Configuration" index="27"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -642,48 +437,51 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="stm32f429/main.c">
-<persistable path="/stm32f429/main.c"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="stm32f429.coproj" tooltip="C:\Users\anhttv24\embed-system\stm32f429.coproj">
+<persistable uri="file:/C:/Users/anhttv24/embed-system/stm32f429.coproj"/>
 </file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage horizontalPosition="0" selectedItemId="54" subPageIndex="2" verticalPosition="0"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="game/main.c">
+<persistable path="/game/main.c"/>
+</file>
+<file factoryID="org.coocox.component.board.ui.editor.BoardEditorElementFactory" id="org.coocox.component.board.ui.editor.BoardBrowserEditor" name="Board" tooltip="Board">
+<persistable>&#x0A;<subPage/>
 </persistable>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pacman.c" tooltip="stm32f429/ubpacman_lib/pacman.c">
-<persistable path="/stm32f429/ubpacman_lib/pacman.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pacman.c" tooltip="stm32f429/pacman_lib/pacman.c">
+<persistable path="/stm32f429/pacman_lib/pacman.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gui.c" tooltip="stm32f429/ubpacman_lib/gui.c">
-<persistable path="/stm32f429/ubpacman_lib/gui.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="gui.c" tooltip="stm32f429/pacman_lib/gui.c">
+<persistable path="/stm32f429/pacman_lib/gui.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.c" tooltip="stm32f429/ubpacman_lib/clyde.c">
-<persistable path="/stm32f429/ubpacman_lib/clyde.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.c" tooltip="stm32f429/pacman_lib/clyde.c">
+<persistable path="/stm32f429/pacman_lib/clyde.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inky.c" tooltip="stm32f429/ubpacman_lib/inky.c">
-<persistable path="/stm32f429/ubpacman_lib/inky.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inky.c" tooltip="stm32f429/pacman_lib/inky.c">
+<persistable path="/stm32f429/pacman_lib/inky.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.c" tooltip="stm32f429/ubpacman_lib/pinky.c">
-<persistable path="/stm32f429/ubpacman_lib/pinky.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.c" tooltip="stm32f429/pacman_lib/pinky.c">
+<persistable path="/stm32f429/pacman_lib/pinky.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="blinky.c" tooltip="stm32f429/ubpacman_lib/blinky.c">
-<persistable path="/stm32f429/ubpacman_lib/blinky.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="blinky.c" tooltip="stm32f429/pacman_lib/blinky.c">
+<persistable path="/stm32f429/pacman_lib/blinky.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="player.c" tooltip="stm32f429/ubpacman_lib/player.c">
-<persistable path="/stm32f429/ubpacman_lib/player.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="player.c" tooltip="stm32f429/pacman_lib/player.c">
+<persistable path="/stm32f429/pacman_lib/player.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menu.h" tooltip="stm32f429/ubpacman_lib/menu.h">
-<persistable path="/stm32f429/ubpacman_lib/menu.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menu.h" tooltip="stm32f429/pacman_lib/menu.h">
+<persistable path="/stm32f429/pacman_lib/menu.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menu.c" tooltip="stm32f429/ubpacman_lib/menu.c">
-<persistable path="/stm32f429/ubpacman_lib/menu.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="menu.c" tooltip="stm32f429/pacman_lib/menu.c">
+<persistable path="/stm32f429/pacman_lib/menu.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.h" tooltip="stm32f429/ubpacman_lib/pinky.h">
-<persistable path="/stm32f429/ubpacman_lib/pinky.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.h" tooltip="stm32f429/pacman_lib/pinky.h">
+<persistable path="/stm32f429/pacman_lib/pinky.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inky.h" tooltip="stm32f429/ubpacman_lib/inky.h">
-<persistable path="/stm32f429/ubpacman_lib/inky.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inky.h" tooltip="stm32f429/pacman_lib/inky.h">
+<persistable path="/stm32f429/pacman_lib/inky.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.h" tooltip="stm32f429/ubpacman_lib/clyde.h">
-<persistable path="/stm32f429/ubpacman_lib/clyde.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.h" tooltip="stm32f429/pacman_lib/clyde.h">
+<persistable path="/stm32f429/pacman_lib/clyde.h"/>
 </file>
 </mruList>
 </workbench>
