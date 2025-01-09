@@ -33,7 +33,7 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
         </MemoryAreas>
-        <LocateLinkFile path="../../../../../coocox/coide/configuration/programdata/stm32f429/arm-gcc-link.ld" type="0"/>
+        <LocateLinkFile path="../../configuration/programdata/stm32f429/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -155,9 +155,9 @@
     <File name="ub_lib/stm32_ub_spi5.h" path="ub_lib/stm32_ub_spi5.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
     <File name="ub_lib/bilder/Skin1.c" path="ub_lib/bilder/Skin1.c" type="1"/>
-    <File name="ub_lib/usb_hcd.h" path="ub_lib/usb_hid_host_lolevel/usb_hcd.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_ltdc.c" path="cmsis_lib/source/stm32f4xx_ltdc.c" type="1"/>
     <File name="ubpacman_lib/pacman.c" path="ubpacman_lib/pacman.c" type="1"/>
+    <File name="ub_lib/usb_hcd.h" path="ub_lib/usb_hid_host_lolevel/usb_hcd.h" type="1"/>
     <File name="ubpacman_lib/player.c" path="ubpacman_lib/player.c" type="1"/>
     <File name="ub_lib/stm32_ub_sdram.h" path="ub_lib/stm32_ub_sdram.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>

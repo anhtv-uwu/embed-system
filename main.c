@@ -16,9 +16,18 @@ int main(void)
   SystemInit(); //
 
   pacman_start();
-
+//  pacman_hw_init();
+//  skin_init();
   while(1)
   {
+//	  Image2LCD_t test;
+//	    test.dest_xp = 10;
+//	    test.dest_yp = 0;
+//	    test.source_xp = 0;
+//	    test.source_yp = 0;
+//	    test.w = 130;
+//	    test.h = 130;
+//	    UB_Graphic2D_DrawImageRect(test);
   }
 }
 

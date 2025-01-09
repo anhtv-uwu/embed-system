@@ -31,8 +31,8 @@ void maze_generate_searchandset(uint32_t mark, Room_t room) {
                 if ((Maze.Room[x][y].typ == ROOM_TYP_PATH) || (Maze.Room[x][y].special == ROOM_SPEC_PORTAL)) {
                     Maze.Room[x][y].skin = ROOM_SKIN_POINTS_NONE;
                     if (Maze.Room[x][y].points == ROOM_POINTS_NORMAL) Maze.Room[x][y].skin = ROOM_SKIN_POINTS_NORMAL;
-                    if (Maze.Room[x][y].points == ROOM_POINTS_ENERGY) Maze.Room[x][y].skin = ROOM_SKIN_POINTS_NORMAL;
-                    //          if(Maze.Room[x][y].points==ROOM_POINTS_ENERGY)  Maze.Room[x][y].skin=ROOM_SKIN_POINTS_ENERGY;
+                    // if (Maze.Room[x][y].points == ROOM_POINTS_ENERGY) Maze.Room[x][y].skin = ROOM_SKIN_POINTS_NORMAL;
+                    if(Maze.Room[x][y].points==ROOM_POINTS_ENERGY)  Maze.Room[x][y].skin=ROOM_SKIN_POINTS_ENERGY;
                 }
             } else if (mark == SEARCH_SKIN_UNDEF) {
                 if (Maze.Room[x][y].skin == ROOM_SKIN_WALL_UNDEF) {

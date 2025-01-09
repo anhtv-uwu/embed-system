@@ -230,9 +230,17 @@ void gui_draw_blinky(void) {
         koord.w = BOTS_WIDTH;
         koord.h = BOTS_HEIGHT;
         s = Blinky.skin;
-        koord.source_xp = Blinky_Skin[s].xp;
-        koord.source_yp = Blinky_Skin[s].yp;
-        UB_Graphic2D_DrawImageRect(koord);
+        if (s>8){
+        	// Debug
+        	koord.source_xp = Blinky_Skin[s].xp;
+			koord.source_yp = Blinky_Skin[s].yp;
+			UB_Graphic2D_DrawImageRect(koord);
+        }
+        else{
+        	 koord.source_xp = Blinky_Skin[s].xp;
+			koord.source_yp = Blinky_Skin[s].yp;
+			UB_Graphic2D_DrawImageRect(koord);
+        }
     }
 }
 

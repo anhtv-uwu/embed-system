@@ -14,9 +14,9 @@ void menu_redraw(uint32_t aktpos);
 void menu_inc_value(uint32_t aktpos);
 void menu_dec_value(uint32_t aktpos);
 
-char key[20] = "nono";
-char connected[] = "Keyboard found       ";
-char disconnected[] = "Keyboard disconnected";
+char key[20] = "Test";
+char connected[] = "";
+char disconnected[] = "";
 uint32_t isConnected = 0;
 
 //--------------------------------------------------------------

@@ -61,12 +61,14 @@ void maze_make_rooms(void) {
     maze_generate_digpath_h(9, 26, 4, ROOM_POINTS_NORMAL);
     maze_generate_digpath_h(15, 26, 4, ROOM_POINTS_NORMAL);
     maze_generate_digpath_h(21, 26, 6, ROOM_POINTS_NORMAL);
-    maze_generate_digpath_h(1, 29, 26, ROOM_POINTS_NORMAL);
+    maze_generate_digpath_h(1, 29, 24, ROOM_POINTS_NORMAL);
+    maze_generate_digpath_h(1, 29, 1, ROOM_POINTS_ENERGY);
 
     //------------------------------
     // 2b. dig pathes through the walls
     // vertikal and set doors and points
     //------------------------------
+    
     maze_generate_digpath_v(1, 1, 8, ROOM_POINTS_NORMAL);
     maze_generate_digpath_v(6, 1, 26, ROOM_POINTS_NORMAL);
     maze_generate_digpath_v(12, 1, 5, ROOM_POINTS_NORMAL);
