@@ -2,6 +2,8 @@
 // Includes
 //--------------------------------------------------------------
 #include "stm32_ub_uart.h"
+#include <stddef.h>
+#include <string.h>
 
 
 
