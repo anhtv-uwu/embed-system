@@ -17,7 +17,6 @@ int main(void)
   SystemInit(); //
 
   pacman_start();
-  pacman_hw_init();
 
 
   while(1)

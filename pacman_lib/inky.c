@@ -19,7 +19,7 @@ void inky_calc_next_move(void);
 //--------------------------------------------------------------
 void inky_init(uint32_t mode) {
     if (mode == GAME_OVER) {
-        Inky.strategy = GHOST_STRATEGY_RANDOM;
+        Inky.strategy = GHOST_STRATEGY_INKY;
     }
     if (Player.level <= GAME_MAX_LEVEL) {
         Inky.akt_speed_ms = Level[Player.level - 1].inky_speed;

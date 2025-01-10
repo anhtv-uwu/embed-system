@@ -36,11 +36,11 @@ void UB_Systick_Init(void) {
 
 
   #if SYSTICK_RESOLUTION==1
-    // Timer auf 1us einstellen
+    // Timer 1us 
     RCC_GetClocksFreq(&RCC_Clocks);
     SysTick_Config(RCC_Clocks.HCLK_Frequency / 1000000);
   #else
-    // Timer auf 1ms einstellen
+    // Timer 1ms
     RCC_GetClocksFreq(&RCC_Clocks);
     SysTick_Config(RCC_Clocks.HCLK_Frequency / 1000);
   #endif
@@ -49,8 +49,8 @@ void UB_Systick_Init(void) {
 
 #if SYSTICK_RESOLUTION==1
 //--------------------------------------------------------------
-// Pausenfunktion (in us)
-// die CPU wartet bis die Zeit abgelaufen ist
+// Chức năng tạm dừng (tính bằng us)
+// CPU chờ cho đến khi thời gian hết
 //--------------------------------------------------------------
 void UB_Systick_Pause_us(volatile uint32_t pause)
 {
@@ -83,8 +83,8 @@ void UB_Systick_Pause_ms(volatile uint32_t pause)
 
 
 //--------------------------------------------------------------
-// Pausenfunktion (in s)
-// die CPU wartet bis die Zeit abgelaufen ist
+// Chức năng tạm dừng (tính bằng giây)
+// CPU chờ cho đến khi thời gian hết
 //--------------------------------------------------------------
 void UB_Systick_Pause_s(volatile uint32_t pause)
 {
@@ -94,9 +94,6 @@ void UB_Systick_Pause_s(volatile uint32_t pause)
     UB_Systick_Pause_ms(1000);
   }
 }
-
-
-
 
 
 //--------------------------------------------------------------

@@ -16,7 +16,7 @@ void blinky_calc_next_move(void);
 //--------------------------------------------------------------
 void blinky_init(uint32_t mode) {
     if (mode == GAME_OVER) {
-        Blinky.strategy = GHOST_STRATEGY_RANDOM;
+        Blinky.strategy = GHOST_STRATEGY_BLINKY;
     }
     if (Player.level <= GAME_MAX_LEVEL) {
         Blinky.akt_speed_ms = Level[Player.level - 1].blinky_speed;
