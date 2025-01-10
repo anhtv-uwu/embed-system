@@ -9,17 +9,14 @@
 
 #include "gui.h"
 
-//--------------------------------------------------------------
-// interne Funktionen
-//--------------------------------------------------------------
 uint32_t UB_SQRT(uint32_t wert);
 uint32_t bot_calc_move(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint32_t akt_dir);
 uint32_t bot_calc_distance(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2);
 
 //--------------------------------------------------------------
-// bot strategie : random
+// bot strategy : random
 // move randomly to the next room
-// (but dont go backwards to avoid toggling)
+// (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_random(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     uint32_t ret_wert = MOVE_STOP;
@@ -43,10 +40,10 @@ uint32_t bot_calc_move_random(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 }
 
 //--------------------------------------------------------------
-// bot strategie : blinky
+// bot strategy : blinky
 //                 move to the room with the shortest distance
 //                 to the player
-//                 (but dont go backwards to avoid toggling)
+//                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_blinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     uint32_t ret_wert = MOVE_STOP;
@@ -63,10 +60,10 @@ uint32_t bot_calc_move_blinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 }
 
 //--------------------------------------------------------------
-// bot strategie : pinky
+// bot strategy : pinky
 //                 move to the room with the shortest distance
-//                 to the 4th. room in front of the player direction
-//                 (but dont go backwards to avoid toggling)
+//                 to the 4th room in front of the player's direction
+//                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_pinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     uint32_t ret_wert = MOVE_STOP;
@@ -108,12 +105,12 @@ uint32_t bot_calc_move_pinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 }
 
 //--------------------------------------------------------------
-// bot strategie : inky
+// bot strategy : inky
 //                 move to the room with the shortest distance
 //                 to the position "x"
-//                 where "x" is calculatet as :
+//                 where "x" is calculated as :
 //                 
-//                 (but dont go backwards to avoid toggling)
+//                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_inky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     uint32_t ret_wert = MOVE_STOP;
@@ -171,12 +168,12 @@ uint32_t bot_calc_move_inky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 }
 
 //--------------------------------------------------------------
-// bot strategie : clyde
-//                 if the distance to the player huge enough
+// bot strategy : clyde
+//                 if the distance to the player is large enough
 //                 set the player as target and chase him
 //                 else set the scatter point as target
 //
-//                 (but dont go backwards to avoid toggling)
+//                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_clyde(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     uint32_t ret_wert = MOVE_STOP;
@@ -202,10 +199,10 @@ uint32_t bot_calc_move_clyde(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t 
 }
 
 //--------------------------------------------------------------
-// bot strategie : home
+// bot strategy : home
 //                 move to the room with the shortest distance
 //                 to the home position
-//                 (but dont go backwards to avoid toggling)
+//                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_home(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     uint32_t ret_wert = MOVE_STOP;
@@ -233,10 +230,10 @@ uint32_t bot_calc_move_home(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t a
 }
 
 //--------------------------------------------------------------
-// bot strategie : scatter
+// bot strategy : scatter
 //                 move to the room with the shortest distance
 //                 to the scatter point
-//                 (but dont go backwards to avoid toggling)
+//                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_scatter(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     uint32_t ret_wert = MOVE_STOP;

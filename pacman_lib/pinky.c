@@ -3,9 +3,6 @@
 
 extern Level_t Level[];
 
-//--------------------------------------------------------------
-// interne Funktionen
-//--------------------------------------------------------------
 void pinky_check_event(void);
 void pinky_change_skin(uint32_t direction);
 void pinky_calc_next_move(void);

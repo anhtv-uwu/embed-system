@@ -121,7 +121,7 @@ Game_t;
 Game_t Game;
 
 //--------------------------------------------------------------
-// Globale Funktionen
+// Global functions
 //--------------------------------------------------------------
 void pacman_start(void);
 uint32_t pacman_hw_init(void);
@@ -130,10 +130,10 @@ void pacman_set_level(void);
 uint32_t pacman_play(void);
 void pacman_dec_mode_timer(void);
 
-void UB_Tiled_1ms_ISR_CallBack(void); // Diese Funktion muss extern benutzt werden !!
-void UB_Tiled_Input_Device_CallBack(void); // Diese Funktion muss extern benutzt werden !!
-void UB_Tiled_LCD_CallBack(void); // Diese Funktion muss extern benutzt werden !!
-void UB_Tiled_Event_CallBack(void); // Diese Funktion muss extern benutzt werden !!
+void UB_Tiled_1ms_ISR_CallBack(void); 
+void UB_Tiled_Input_Device_CallBack(void); 
+void UB_Tiled_LCD_CallBack(void); 
+void UB_Tiled_Event_CallBack(void); 
 
 //--------------------------------------------------------------
 #endif // __STM32F4_UB_PACMAN_H

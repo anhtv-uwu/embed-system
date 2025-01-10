@@ -102,8 +102,6 @@ void pacman_start(void) {
     pacman_init(GAME_OVER);
     check = pacman_hw_init();
 
-    gui_debug_uart("PACMAN 4 STM32F429 [UB]");
-
     if (check != 0) {
         UB_LCD_FillLayer(BACKGROUND_COL);
         UB_Font_DrawString(10, 280, "Touch ERR", & Arial_7x10, FONT_COL, BACKGROUND_COL);

@@ -35,7 +35,7 @@
 #define BLINKY_SCATTER_Y 0
 
 //--------------------------------------------------------------
-// Globale Funktionen
+// Global function
 //--------------------------------------------------------------
 void blinky_init(uint32_t mode);
 void blinky_move(void);
