@@ -1,26 +1,25 @@
-//--------------------------------------------------------------
-// File     : main.c
-// IDE      : CooCox CoIDE 1.7.4
-// GCC      : 4.7 2012q4
-//--------------------------------------------------------------
-
 #include "main.h"
 #include "pacman.h"
 #include "random.h"
 
 
-USB_HID_HOST_STATUS_t usb_status;  // trang thai Keyboard
+USB_HID_HOST_STATUS_t usb_status; 
 
 
 int main(void)
 {
   SystemInit(); //
 
-  pacman_start();
+  // pacman_start();
+  pacman_hw_init();
 
 
   while(1)
   {
+    int button = UART_CheckButton();
+    char buf[10];
+    sprintf(buf, "Button: %d", button);
+    UB_Font_DrawString(10, 10, buf, & Arial_7x10, 0x0000, 0xFFFF);
   }
 }
 
