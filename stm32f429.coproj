@@ -33,7 +33,7 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
         </MemoryAreas>
-        <LocateLinkFile path="../../../coocox/coide/configuration/programdata/stm32f429/arm-gcc-link.ld" type="0"/>
+        <LocateLinkFile path="../../configuration/programdata/stm32f429/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -105,10 +105,10 @@
     <File name="stdio/printf.c" path="stdio/printf.c" type="1"/>
     <File name="ub_lib/stm32_ub_tiled.c" path="ub_lib/stm32_ub_tiled.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
-    <File name="ub_lib/fonts" path="" type="2"/>
     <File name="ub_lib/usbh_hid_keybd.h" path="ub_lib/usb_hid_host_lolevel/usbh_hid_keybd.h" type="1"/>
-    <File name="stdio" path="" type="2"/>
+    <File name="ub_lib/fonts" path="" type="2"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
+    <File name="stdio" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="pacman_lib/pacman.h" path="pacman_lib/pacman.h" type="1"/>
@@ -154,8 +154,8 @@
     <File name="ub_lib/usbh_core.c" path="ub_lib/usb_hid_host_lolevel/usbh_core.c" type="1"/>
     <File name="ub_lib/stm32_ub_spi5.h" path="ub_lib/stm32_ub_spi5.h" type="1"/>
     <File name="pacman_lib/menu.c" path="pacman_lib/menu.c" type="1"/>
-    <File name="cmsis_boot" path="" type="2"/>
     <File name="ub_lib/bilder/Skin1.c" path="ub_lib/bilder/Skin1.c" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_ltdc.c" path="cmsis_lib/source/stm32f4xx_ltdc.c" type="1"/>
     <File name="ub_lib/usb_hcd.h" path="ub_lib/usb_hid_host_lolevel/usb_hcd.h" type="1"/>
     <File name="ub_lib/stm32_ub_sdram.h" path="ub_lib/stm32_ub_sdram.h" type="1"/>
@@ -196,8 +196,8 @@
     <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="pacman_lib/pinky.h" path="pacman_lib/pinky.h" type="1"/>
-    <File name="pacman_lib/maze_generate.h" path="pacman_lib/maze_generate.h" type="1"/>
     <File name="syscalls" path="" type="2"/>
+    <File name="pacman_lib/maze_generate.h" path="pacman_lib/maze_generate.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_rng.h" path="cmsis_lib/include/stm32f4xx_rng.h" type="1"/>
     <File name="cmsis_lib/include" path="" type="2"/>
     <File name="ub_lib/usb_conf.h" path="ub_lib/usb_hid_host_lolevel/usb_conf.h" type="1"/>

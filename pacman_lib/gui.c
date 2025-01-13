@@ -641,6 +641,19 @@ uint32_t gui_check_button(void) {
     return (ret_wert);
 }
 
+
+uint32_t gui_check_button_uart(void){
+    uint32_t ret_value = GUI_JOY_NONE;
+    static uint32_t old_button = 999;
+
+    ret_value = UART_CheckButton();
+    if (old_button != ret_value) {
+        old_button = ret_value;
+        GUI.refresh_buttons = GUI_REFRESH_VALUE;
+    }
+    return ret_value;
+}
+
 // Check keyboard
 uint32_t gui_check_keyboard(void) {
     uint32_t ret_wert = GUI_JOY_NONE;

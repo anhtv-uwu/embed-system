@@ -260,7 +260,8 @@ uint32_t pacman_play(void) {
         if (Gui_Touch_Timer_ms == 0) {
             Gui_Touch_Timer_ms = GUI_TOUCH_INTERVALL_MS;
 
-            joy = gui_check_button();
+            // joy = gui_check_button();
+            joy = gui_check_button_uart();
         }
 
         movement = MOVE_NOBODY;

@@ -27,23 +27,23 @@ def main():
 
             # Kiểm tra phím mũi tên
             if keyboard.is_pressed('left'):
-                ser.write(b"BUTTON: 2\r")  # 2 = LEFT
-                print("Sent: BUTTON: 2")
+                ser.write(b"BUTTON: 4\r") 
+                print("Sent: BUTTON: 4")
                 time.sleep(0.2)
 
             if keyboard.is_pressed('right'):
-                ser.write(b"BUTTON: 3\r")  # 3 = RIGHT
-                print("Sent: BUTTON: 3")
+                ser.write(b"BUTTON: 2\r") 
+                print("Sent: BUTTON: 2")
                 time.sleep(0.2)
 
             if keyboard.is_pressed('up'):
-                ser.write(b"BUTTON: 0\r")  # 0 = UP
-                print("Sent: BUTTON: 0")
+                ser.write(b"BUTTON: 1\r")  
+                print("Sent: BUTTON: 1")
                 time.sleep(0.2)
 
             if keyboard.is_pressed('down'):
-                ser.write(b"BUTTON: 1\r")  # 1 = DOWN
-                print("Sent: BUTTON: 1")
+                ser.write(b"BUTTON: 3\r")  
+                print("Sent: BUTTON: 3")
                 time.sleep(0.2)
 
             # Nghỉ một chút
