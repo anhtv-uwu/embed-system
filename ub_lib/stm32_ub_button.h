@@ -63,7 +63,7 @@ typedef enum {
 #if BUTTON_USE_TIMER==1
   #define   UB_BUTTON_TIM              TIM7
   #define   UB_BUTTON_TIM_CLK          RCC_APB1Periph_TIM7
-  #define   UB_BUTTON_TIM_PERIODE      4999
+  #define   UB_BUTTON_TIM_PERIODE      2499
   #define   UB_BUTTON_TIM_PRESCALE     899
   #define   UB_BUTTON_TIM_IRQ          TIM7_IRQn
   #define   UB_BUTTON_TIM_ISR_HANDLER  TIM7_IRQHandler

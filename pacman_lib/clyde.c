@@ -19,7 +19,7 @@ void clyde_calc_next_move(void);
 //--------------------------------------------------------------
 void clyde_init(uint32_t mode) {
     if (mode == GAME_OVER) {
-        Clyde.strategy = GHOST_STRATEGY_CLYDE;
+        Clyde.strategy = GHOST_STRATEGY_BLINKY;
     }
     if (Player.level <= GAME_MAX_LEVEL) {
         Clyde.akt_speed_ms = Level[Player.level - 1].clyde_speed;

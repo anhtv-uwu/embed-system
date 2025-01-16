@@ -68,7 +68,6 @@ Player_t;
 
 Player_t Player;
 
-Player_t Player2;
 
 //--------------------------------------------------------------
 // Ghosts

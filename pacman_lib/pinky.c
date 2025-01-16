@@ -13,7 +13,7 @@ void pinky_calc_next_move(void);
 //--------------------------------------------------------------
 void pinky_init(uint32_t mode) {
     if (mode == GAME_OVER) {
-        Pinky.strategy = GHOST_STRATEGY_PINKY;
+        Pinky.strategy = GHOST_STRATEGY_BLINKY;
     }
     if (Player.level <= GAME_MAX_LEVEL) {
         Pinky.akt_speed_ms = Level[Player.level - 1].pinky_speed;

@@ -46,7 +46,7 @@ uint32_t bot_calc_move_random(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 //                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_blinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
-    uint32_t ret_wert = MOVE_STOP;
+    uint32_t next_move = MOVE_STOP;
     uint32_t txp, typ;
 
     // spot the player as target
@@ -54,9 +54,9 @@ uint32_t bot_calc_move_blinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     typ = Player.yp;
 
     // calc the new move
-    ret_wert = bot_calc_move(xp, yp, txp, typ, akt_dir);
+    next_move = bot_calc_move(xp, yp, txp, typ, akt_dir);
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
@@ -66,7 +66,7 @@ uint32_t bot_calc_move_blinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 //                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_pinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
-    uint32_t ret_wert = MOVE_STOP;
+    uint32_t next_move = MOVE_STOP;
     int32_t txp, typ; // signed int !!
     uint32_t p_dir = MOVE_STOP;
 
@@ -99,9 +99,9 @@ uint32_t bot_calc_move_pinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     }
 
     // calc the new move
-    ret_wert = bot_calc_move(xp, yp, txp, typ, akt_dir);
+    next_move = bot_calc_move(xp, yp, txp, typ, akt_dir);
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
@@ -113,7 +113,7 @@ uint32_t bot_calc_move_pinky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 //                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_inky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
-    uint32_t ret_wert = MOVE_STOP;
+    uint32_t next_move = MOVE_STOP;
     int32_t txp, typ; // signed int !!
     int32_t dxp, dyp; // signed int !!
     uint32_t bxp, byp;
@@ -162,9 +162,9 @@ uint32_t bot_calc_move_inky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
     if (typ >= ROOM_CNT_Y) txp = ROOM_CNT_Y - 1;
 
     // calc the new move
-    ret_wert = bot_calc_move(xp, yp, txp, typ, akt_dir);
+    next_move = bot_calc_move(xp, yp, txp, typ, akt_dir);
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
@@ -176,7 +176,7 @@ uint32_t bot_calc_move_inky(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
 //                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_clyde(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t akt_dir) {
-    uint32_t ret_wert = MOVE_STOP;
+    uint32_t next_move = MOVE_STOP;
     uint32_t txp, typ;
     uint32_t d_clyde = INIT_DISTANCE;
 
@@ -189,13 +189,13 @@ uint32_t bot_calc_move_clyde(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t 
 
     if (d_clyde > 800) {
         // player is far away (more than 8 Rooms) -> chase him directly
-        ret_wert = bot_calc_move(xp, yp, txp, typ, akt_dir);
+        next_move = bot_calc_move(xp, yp, txp, typ, akt_dir);
     } else {
         // player is nearby -> move to scatter point
-        ret_wert = bot_calc_move_scatter(ghost, xp, yp, akt_dir);
+        next_move = bot_calc_move_scatter(ghost, xp, yp, akt_dir);
     }
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
@@ -205,7 +205,7 @@ uint32_t bot_calc_move_clyde(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t 
 //                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_home(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t akt_dir) {
-    uint32_t ret_wert = MOVE_STOP;
+    uint32_t next_move = MOVE_STOP;
     uint32_t txp, typ;
 
     // spot the home position as target
@@ -224,9 +224,9 @@ uint32_t bot_calc_move_home(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t a
     }
 
     // calc the new move
-    ret_wert = bot_calc_move(xp, yp, txp, typ, akt_dir);
+    next_move = bot_calc_move(xp, yp, txp, typ, akt_dir);
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
@@ -236,7 +236,7 @@ uint32_t bot_calc_move_home(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t a
 //                 (but don't go backwards to avoid toggling)
 //--------------------------------------------------------------
 uint32_t bot_calc_move_scatter(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_t akt_dir) {
-    uint32_t ret_wert = MOVE_STOP;
+    uint32_t next_move = MOVE_STOP;
     uint32_t txp, typ;
 
     // spot the scatter point as target
@@ -255,9 +255,9 @@ uint32_t bot_calc_move_scatter(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_
     }
 
     // calc the new move
-    ret_wert = bot_calc_move(xp, yp, txp, typ, akt_dir);
+    next_move = bot_calc_move(xp, yp, txp, typ, akt_dir);
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
@@ -268,7 +268,7 @@ uint32_t bot_calc_move_scatter(uint32_t ghost, uint32_t xp, uint32_t yp, uint32_
 // x2,y2 = target position
 //--------------------------------------------------------------
 uint32_t bot_calc_move(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint32_t akt_dir) {
-    uint32_t ret_wert = MOVE_STOP;
+    uint32_t next_move = MOVE_STOP;
     uint32_t xn, yn;
     uint32_t d_up = INIT_DISTANCE, d_right = INIT_DISTANCE, d_down = INIT_DISTANCE, d_left = INIT_DISTANCE;
     uint32_t d_min;
@@ -301,22 +301,22 @@ uint32_t bot_calc_move(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint3
     d_min = INIT_DISTANCE;
     if (d_up < d_min) {
         d_min = d_up;
-        ret_wert = MOVE_UP;
+        next_move = MOVE_UP;
     }
     if (d_left < d_min) {
         d_min = d_left;
-        ret_wert = MOVE_LEFT;
+        next_move = MOVE_LEFT;
     }
     if (d_down < d_min) {
         d_min = d_down;
-        ret_wert = MOVE_DOWN;
+        next_move = MOVE_DOWN;
     }
     if (d_right < d_min) {
         d_min = d_right;
-        ret_wert = MOVE_RIGHT;
+        next_move = MOVE_RIGHT;
     }
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
@@ -324,7 +324,7 @@ uint32_t bot_calc_move(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint3
 // c = SQRT(a*a + b*b)
 //--------------------------------------------------------------
 uint32_t bot_calc_distance(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2) {
-    uint32_t ret_wert = 0;
+    uint32_t next_move = 0;
     int32_t dx, dy; // signed int !!
 
     dx = (x1 - x2);
@@ -339,16 +339,16 @@ uint32_t bot_calc_distance(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2) {
 
     if ((dx == 0) || (dy == 0)) {
         if ((dx == 0) && (dy == 0)) {
-            ret_wert = 0;
-            return (ret_wert);
+            next_move = 0;
+            return (next_move);
         }
         if (dx == 0) {
-            ret_wert = dy;
-            return (ret_wert);
+            next_move = dy;
+            return (next_move);
         }
         if (dy == 0) {
-            ret_wert = dx;
-            return (ret_wert);
+            next_move = dx;
+            return (next_move);
         }
     }
 
@@ -358,16 +358,16 @@ uint32_t bot_calc_distance(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2) {
     dx = dx * dx;
     dy = dy * dy;
 
-    ret_wert = UB_SQRT(dx + dy);
+    next_move = UB_SQRT(dx + dy);
 
-    return (ret_wert);
+    return (next_move);
 }
 
 //--------------------------------------------------------------
 // integer SQRT
 //--------------------------------------------------------------
 uint32_t UB_SQRT(uint32_t wert) {
-    uint32_t ret_wert = 0;
+    uint32_t next_move = 0;
     uint32_t square = 1;
     uint32_t delta = 3;
 
@@ -376,7 +376,34 @@ uint32_t UB_SQRT(uint32_t wert) {
         delta += 2;
     }
 
-    ret_wert = (delta / 2) - 1;
+    next_move = (delta / 2) - 1;
 
-    return (ret_wert);
+    return (next_move);
+}
+
+
+uint32_t bot_calc_move_inky_2(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
+    uint32_t target_x = Player.xp + 2 ; // Target two steps ahead
+    uint32_t target_y = Player.yp + 2 ;
+    return bot_calc_move(xp, yp, target_x, target_y, akt_dir);
+}
+
+//--------------------------------------------------------------
+// bot strategy : pinky
+//                 targets a position to the left of the player
+//--------------------------------------------------------------
+uint32_t bot_calc_move_pinky_2(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
+    uint32_t target_x = Player.xp - 1; // Target to the left
+    uint32_t target_y = Player.yp;
+    return bot_calc_move(xp, yp, target_x, target_y, akt_dir);
+}
+
+//--------------------------------------------------------------
+// bot strategy : clyde
+//                 targets a position behind the player
+//--------------------------------------------------------------
+uint32_t bot_calc_move_clyde_2(uint32_t xp, uint32_t yp, uint32_t akt_dir) {
+    uint32_t target_x = Player.xp; // Target behind
+    uint32_t target_y = Player.yp - 1;
+    return bot_calc_move(xp, yp, target_x, target_y, akt_dir);
 }

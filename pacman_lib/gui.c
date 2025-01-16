@@ -44,7 +44,7 @@ void gui_clear_bots(void) {
 //--------------------------------------------------------------
 void gui_draw_bots(void) {
     gui_draw_player();
-    if (Game.mode_2_player) {
+    if (Game.mode_2_player == 1) {
         gui_draw_blinky();
     }
     else{

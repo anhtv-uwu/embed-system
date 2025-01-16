@@ -114,7 +114,7 @@ void pacman_start(void) {
     pinky_init(GAME_OVER);
     inky_init(GAME_OVER);
     clyde_init(GAME_OVER);
-    if (Game.mode_2_player) {
+    if (Game.mode_2_player == 1) {
         Blinky.move = MOVE_STOP;
     }
     // Gọi menu
@@ -231,7 +231,7 @@ void pacman_init(uint32_t mode) {
 void pacman_set_level(void) {
     if (Player.level <= GAME_MAX_LEVEL) {
         Player.akt_speed_ms = Level[Player.level - 1].player_speed;
-        if (Game.mode_2_player) {
+        if (Game.mode_2_player ==1) {
             Blinky.akt_speed_ms = Level[Player.level - 1].player_speed;
             // Blinky.akt_speed_ms = -1;
             // Pinky.akt_speed_ms = -1;
@@ -246,7 +246,7 @@ void pacman_set_level(void) {
         }
     } else {
         Player.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].player_speed;
-        if (Game.mode_2_player) {
+        if (Game.mode_2_player == 1) {
             Blinky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].player_speed;
             // Blinky.akt_speed_ms = -1;
             // Pinky.akt_speed_ms = -1;
@@ -279,12 +279,13 @@ uint32_t pacman_play(void) {
         //----------------------------------------
         // Touch/Button Timer
         //----------------------------------------
-        if (Gui_Touch_Timer_ms == 0) {
-            Gui_Touch_Timer_ms = GUI_TOUCH_INTERVALL_MS;
+        // if (Gui_Touch_Timer_ms == 0) {
+        //     Gui_Touch_Timer_ms = GUI_TOUCH_INTERVALL_MS;
 
-            // joy = gui_check_button();
-            joy = gui_check_button_uart();
-        }
+        //     joy = gui_check_button();
+        //     // joy = gui_check_button_uart();
+        // }
+        joy = gui_check_button();
 
         movement = MOVE_NOBODY;
 
@@ -387,15 +388,10 @@ uint32_t pacman_play(void) {
             player_move();
             player_change_direction(joy);
         }
-        if (Game.mode_2_player) {
+        if (Game.mode_2_player == 1) {
             if ((movement & MOVE_BLINKY) != 0) {
-                char buf[10];
-                joy_2_player = gui_check_button();
-                // sprintf(buf, "joy_2_player = %d", joy_2_player);
-                // UB_Font_DrawString(10, 10, buf, & Arial_7x10, 0x0000, 0xFFFF);
-                
-                // blinky_move_2_player(joy_2_player);
-                // blinky_change_direction(joy_2_player);
+                // joy_2_player = gui_check_button();
+                joy_2_player = gui_check_button_uart();
                 blinky_move_2_player_2(joy_2_player);
             }
         }
