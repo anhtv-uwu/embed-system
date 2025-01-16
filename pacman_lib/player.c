@@ -48,6 +48,7 @@ void player_init(uint32_t mode) {
     Player.frightened_buf = PLAYER_FRIGHTENED_BUF;
 }
 
+
 //--------------------------------------------------------------
 // moves player one pixel
 //--------------------------------------------------------------

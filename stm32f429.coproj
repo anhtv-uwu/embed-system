@@ -84,8 +84,8 @@
     <File name="ub_lib/stm32_ub_usb_hid_host.c" path="ub_lib/stm32_ub_usb_hid_host.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_usart.h" path="cmsis_lib/include/stm32f4xx_usart.h" type="1"/>
     <File name="pacman_lib/clyde.h" path="pacman_lib/clyde.h" type="1"/>
-    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="ub_lib/usbh_usr.h" path="ub_lib/usb_hid_host_lolevel/usbh_usr.h" type="1"/>
@@ -111,23 +111,23 @@
     <File name="stdio" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
-    <File name="pacman_lib/pacman.h" path="pacman_lib/pacman.h" type="1"/>
     <File name="ub_lib/usb_hcd.c" path="ub_lib/usb_hid_host_lolevel/usb_hcd.c" type="1"/>
+    <File name="pacman_lib/pacman.h" path="pacman_lib/pacman.h" type="1"/>
     <File name="ub_lib/stm32_ub_tiled.h" path="ub_lib/stm32_ub_tiled.h" type="1"/>
     <File name="ub_lib" path="" type="2"/>
     <File name="ub_lib/stm32_ub_graphic2d.c" path="ub_lib/stm32_ub_graphic2d.c" type="1"/>
-    <File name="pacman_lib/player.h" path="pacman_lib/player.h" type="1"/>
     <File name="ub_lib/stm32_ub_lcd_ili9341.h" path="ub_lib/stm32_ub_lcd_ili9341.h" type="1"/>
+    <File name="pacman_lib/player.h" path="pacman_lib/player.h" type="1"/>
     <File name="ub_lib/stm32_ub_font.c" path="ub_lib/stm32_ub_font.c" type="1"/>
-    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
     <File name="ub_lib/usb_bsp.h" path="ub_lib/usb_hid_host_lolevel/usb_bsp.h" type="1"/>
-    <File name="ub_lib/usbh_hid_core.c" path="ub_lib/usb_hid_host_lolevel/usbh_hid_core.c" type="1"/>
+    <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_rng.c" path="cmsis_lib/source/stm32f4xx_rng.c" type="1"/>
+    <File name="ub_lib/usbh_hid_core.c" path="ub_lib/usb_hid_host_lolevel/usbh_hid_core.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
     <File name="ub_lib/usbh_hid_mouse.c" path="ub_lib/usb_hid_host_lolevel/usbh_hid_mouse.c" type="1"/>
     <File name="ub_lib/stm32_ub_uart.c" path="ub_lib/stm32_ub_uart.c" type="1"/>
-    <File name="ub_lib/usb_core.h" path="ub_lib/usb_hid_host_lolevel/usb_core.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_dma2d.h" path="cmsis_lib/include/stm32f4xx_dma2d.h" type="1"/>
+    <File name="ub_lib/usb_core.h" path="ub_lib/usb_hid_host_lolevel/usb_core.h" type="1"/>
     <File name="ub_lib/stm32_ub_button.c" path="ub_lib/stm32_ub_button.c" type="1"/>
     <File name="ub_lib/usbh_hid_keybd.c" path="ub_lib/usb_hid_host_lolevel/usbh_hid_keybd.c" type="1"/>
     <File name="cmsis" path="" type="2"/>
@@ -140,8 +140,8 @@
     <File name="pacman_lib/clyde.c" path="pacman_lib/clyde.c" type="1"/>
     <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
     <File name="ub_lib/stm32_ub_sdram.c" path="ub_lib/stm32_ub_sdram.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_dma2d.c" path="cmsis_lib/source/stm32f4xx_dma2d.c" type="1"/>
     <File name="ub_lib/stm32_ub_graphic2d.h" path="ub_lib/stm32_ub_graphic2d.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_dma2d.c" path="cmsis_lib/source/stm32f4xx_dma2d.c" type="1"/>
     <File name="ub_lib/usbh_usr.c" path="ub_lib/usb_hid_host_lolevel/usbh_usr.c" type="1"/>
     <File name="pacman_lib/bot.h" path="pacman_lib/bot.h" type="1"/>
     <File name="ub_lib/stm32_ub_lcd_ili9341.c" path="ub_lib/stm32_ub_lcd_ili9341.c" type="1"/>
@@ -150,17 +150,17 @@
     <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
     <File name="pacman_lib/blinky.c" path="pacman_lib/blinky.c" type="1"/>
-    <File name="ub_lib/usbh_hid_mouse.h" path="ub_lib/usb_hid_host_lolevel/usbh_hid_mouse.h" type="1"/>
     <File name="ub_lib/usbh_core.c" path="ub_lib/usb_hid_host_lolevel/usbh_core.c" type="1"/>
-    <File name="ub_lib/stm32_ub_spi5.h" path="ub_lib/stm32_ub_spi5.h" type="1"/>
+    <File name="ub_lib/usbh_hid_mouse.h" path="ub_lib/usb_hid_host_lolevel/usbh_hid_mouse.h" type="1"/>
     <File name="pacman_lib/menu.c" path="pacman_lib/menu.c" type="1"/>
+    <File name="ub_lib/stm32_ub_spi5.h" path="ub_lib/stm32_ub_spi5.h" type="1"/>
     <File name="ub_lib/bilder/Skin1.c" path="ub_lib/bilder/Skin1.c" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
-    <File name="cmsis_lib/source/stm32f4xx_ltdc.c" path="cmsis_lib/source/stm32f4xx_ltdc.c" type="1"/>
     <File name="ub_lib/usb_hcd.h" path="ub_lib/usb_hid_host_lolevel/usb_hcd.h" type="1"/>
-    <File name="ub_lib/stm32_ub_sdram.h" path="ub_lib/stm32_ub_sdram.h" type="1"/>
-    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis_lib/source/stm32f4xx_ltdc.c" path="cmsis_lib/source/stm32f4xx_ltdc.c" type="1"/>
     <File name="pacman_lib/skin.c" path="pacman_lib/skin.c" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="ub_lib/stm32_ub_sdram.h" path="ub_lib/stm32_ub_sdram.h" type="1"/>
     <File name="ub_lib/stm32_ub_touch_stmpe811.h" path="ub_lib/stm32_ub_touch_stmpe811.h" type="1"/>
     <File name="ub_lib/stm32_ub_button.h" path="ub_lib/stm32_ub_button.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>

@@ -90,6 +90,7 @@ Level_t;
 #define MOVE_PINKY 0x04 // Bit2
 #define MOVE_INKY 0x08 // Bit3
 #define MOVE_CLYDE 0x10 // Bit4
+// #define MOVE_PLAYER2 0x02 // Bit2 Mode player 2 as blinky
 
 //--------------------------------------------------------------
 #define BOOL_FALSE 0
@@ -116,6 +117,7 @@ typedef struct {
     uint32_t frightened_points;
     uint32_t debug_mode;
     uint32_t numberOfBots;
+    uint32_t mode_2_player;
 }
 Game_t;
 Game_t Game;

@@ -10,6 +10,7 @@ void blinky_check_event(void);
 void blinky_change_skin(uint32_t direction);
 void blinky_calc_next_move(void);
 
+
 //--------------------------------------------------------------
 // init start position
 // and set first and second move
@@ -187,6 +188,141 @@ void blinky_move(void) {
     }
 }
 
+void blinky_move_2_player_2(uint32_t joy){
+    if (Blinky.dot_cnt < BLINKY_DOT_CNT_MAX) return;
+    
+    blinky_calc_next_move_2_player(joy);
+    if (Blinky.move == MOVE_UP) {
+        // move one pixel
+        Blinky.delta_y--;
+        // change skin
+        blinky_change_skin(MOVE_UP);
+        // check if enter new room
+        if (ABS(Blinky.delta_y) >= ROOM_HEIGHT) {
+            Blinky.delta_y = 0;
+            if (Blinky.port == PORT_DONE) {
+                // move to new room
+                Blinky.yp--;
+                // check if portal
+                if (Maze.Room[Blinky.xp][Blinky.yp - 1].special == ROOM_SPEC_PORTAL) {
+                    // start portal
+                    Blinky.port = PORT_UP0;
+                }
+            } else if (Blinky.port == PORT_UP0) {
+                // port to new room
+                Blinky.yp = ROOM_CNT_Y - 2;
+                // stop portal
+                Blinky.port = PORT_UP1;
+            } else {
+                // deaktivate portal
+                Blinky.port = PORT_DONE;
+                // move to new room
+                Blinky.yp--;
+            }
+            // check of new event in this room
+            blinky_check_event();
+
+        }
+    } else if (Blinky.move == MOVE_RIGHT) {
+        // move one pixel
+        Blinky.delta_x++;
+        // change skin
+        blinky_change_skin(MOVE_RIGHT);
+        // check if enter new room
+        if (ABS(Blinky.delta_x) >= ROOM_WIDTH) {
+            Blinky.delta_x = 0;
+            if (Blinky.port == PORT_DONE) {
+                // move to new room
+                Blinky.xp++;
+                // check if portal
+                if (Maze.Room[Blinky.xp + 1][Blinky.yp].special == ROOM_SPEC_PORTAL) {
+                    // start portal
+                    Blinky.port = PORT_RIGHT0;
+                }
+            } else if (Blinky.port == PORT_RIGHT0) {
+                // port to new room
+                Blinky.xp = 1;
+                // stop portal
+                Blinky.port = PORT_RIGHT1;
+            } else {
+                // deaktivate portal
+                Blinky.port = PORT_DONE;
+                // move to new room
+                Blinky.xp++;
+            }
+            // check of new event in this room
+            blinky_check_event();
+        }
+    } else if (Blinky.move == MOVE_DOWN) {
+        // move one pixel
+        Blinky.delta_y++;
+        // change skin
+        blinky_change_skin(MOVE_DOWN);
+        // check if enter new room
+        if (ABS(Blinky.delta_y) >= ROOM_HEIGHT) {
+            Blinky.delta_y = 0;
+            if (Blinky.port == PORT_DONE) {
+                // move to new room
+                Blinky.yp++;
+                // check if portal
+                if (Maze.Room[Blinky.xp][Blinky.yp + 1].special == ROOM_SPEC_PORTAL) {
+                    // start portal
+                    Blinky.port = PORT_DOWN0;
+                }
+            } else if (Blinky.port == PORT_DOWN0) {
+                // port to new room
+                Blinky.yp = 1;
+                // stop portal
+                Blinky.port = PORT_DOWN1;
+            } else {
+                // deaktivate portal
+                Blinky.port = PORT_DONE;
+                // move to new room
+                Blinky.yp++;
+            }
+            // check of new event in this room
+            blinky_check_event();
+
+        }
+    } else if (Blinky.move == MOVE_LEFT) {
+        // move one pixel
+        Blinky.delta_x--;
+        // change skin
+        blinky_change_skin(MOVE_LEFT);
+        // check if enter new room
+        if (ABS(Blinky.delta_x) >= ROOM_WIDTH) {
+            Blinky.delta_x = 0;
+            if (Blinky.port == PORT_DONE) {
+                // move to new room
+                Blinky.xp--;
+                // check if portal
+                if (Maze.Room[Blinky.xp - 1][Blinky.yp].special == ROOM_SPEC_PORTAL) {
+                    // start portal
+                    Blinky.port = PORT_LEFT0;
+                }
+            } else if (Blinky.port == PORT_LEFT0) {
+                // port to new room
+                Blinky.xp = ROOM_CNT_X - 2;
+                // stop portal
+                Blinky.port = PORT_LEFT1;
+            } else {
+                // deaktivate portal
+                Blinky.port = PORT_DONE;
+                // move to new room
+                Blinky.xp--;
+            }
+            // check of new event in this room
+            blinky_check_event();
+        }
+    } else {
+        // no movement (if this happens...error in maze design)
+        Blinky.next_move = MOVE_STOP;
+        blinky_change_skin(MOVE_STOP);
+    }
+}
+
+
+
 //--------------------------------------------------------------
 // change skin from bot for animation
 //--------------------------------------------------------------
@@ -223,6 +359,8 @@ void blinky_change_skin(uint32_t direction) {
         } else {
             Blinky.skin = GHOST_SKIN_LEFT1;
         }
+    } else {
+        Blinky.skin = GHOST_SKIN_LEFT1;
     }
 
     if (Game.frightened == BOOL_TRUE) {
@@ -367,5 +505,114 @@ void blinky_calc_next_move(void) {
             // scatter
             Blinky.next_move = bot_calc_move_scatter(GHOST_BLINKY, xp, yp, Blinky.move);
         }
+    }
+}
+
+
+void blinky_calc_next_move_2_player(uint32_t joy) {
+    uint32_t xp, yp;
+    xp = Blinky.xp;
+    yp = Blinky.yp;
+
+    if (Blinky.status == GHOST_STATUS_DEAD) {
+        // dead (return to home)
+        if (Maze.Room[xp][yp].special == ROOM_SPEC_GATE) {
+            // found entry gate
+            if ((Maze.Room[xp][yp].door & ROOM_BGATE_U) != 0) Blinky.move = MOVE_UP;
+            if ((Maze.Room[xp][yp].door & ROOM_BGATE_R) != 0) Blinky.move = MOVE_RIGHT;
+            if ((Maze.Room[xp][yp].door & ROOM_BGATE_D) != 0) Blinky.move = MOVE_DOWN;
+            if ((Maze.Room[xp][yp].door & ROOM_BGATE_L) != 0) Blinky.move = MOVE_LEFT;
+        } else {
+            Blinky.move  = bot_calc_move_home(GHOST_BLINKY, xp, yp, Blinky.move);
+        }
+        return;
+    }
+    // actual position
+
+    if (joy == GUI_JOY_UP) {
+        if (Blinky.move == MOVE_UP) return;
+
+        if (Blinky.port != PORT_DONE) {
+            // don't change direction while porting
+            return;
+        } else if (Blinky.move == MOVE_DOWN) {
+            // change direction immediately
+            Blinky.move = MOVE_UP;
+            return;
+        } else {
+            // turn only in center of a room
+            if ((Blinky.delta_x == 0) && (Blinky.delta_y == 0)) {
+                if ((Maze.Room[xp][yp].door & ROOM_DOOR_U) != 0) {
+                    Blinky.move = MOVE_UP;
+                    return;
+                }
+            }
+        }
+    } else if (joy == GUI_JOY_RIGHT) {
+        if (Blinky.move == MOVE_RIGHT) return;
+
+        if (Blinky.port != PORT_DONE) {
+            // don't change direction while porting
+            return;
+        } else if (Blinky.move == MOVE_LEFT) {
+            // change direction immediately
+            Blinky.move = MOVE_RIGHT;
+            return;
+        } else {
+            // turn only in center of a room
+            if ((Blinky.delta_x == 0) && (Blinky.delta_y == 0)) {
+                if ((Maze.Room[xp][yp].door & ROOM_DOOR_R) != 0) {
+                    Blinky.move = MOVE_RIGHT;
+                    return;
+                }
+            }
+        }
+    } else if (joy == GUI_JOY_DOWN) {
+        if (Blinky.move == MOVE_DOWN) return;
+
+        if (Blinky.port != PORT_DONE) {
+            // don't change direction while porting
+            return;
+        } else if (Blinky.move == MOVE_UP) {
+            // change direction immediately
+            Blinky.move = MOVE_DOWN;
+            return;
+        } else {
+            // turn only in center of a room
+            if ((Blinky.delta_x == 0) && (Blinky.delta_y == 0)) {
+                if ((Maze.Room[xp][yp].door & ROOM_DOOR_D) != 0) {
+                    Blinky.move = MOVE_DOWN;
+                    return;
+                }
+            }
+        }
+    } else if (joy == GUI_JOY_LEFT) {
+        if (Blinky.move == MOVE_LEFT) return;
+
+        if (Blinky.port != PORT_DONE) {
+            // don't change direction while porting
+            return;
+        } else if (Blinky.move == MOVE_RIGHT) {
+            // change direction immediately
+            Blinky.move = MOVE_LEFT;
+            return;
+        } else {
+            // turn only in center of a room
+            if ((Blinky.delta_x == 0) && (Blinky.delta_y == 0)) {
+                if ((Maze.Room[xp][yp].door & ROOM_DOOR_L) != 0) {
+                    Blinky.move = MOVE_LEFT;
+                    return;
+                }
+            }
+        }
+    }
+
+    // Check if the current move is possible (not hitting a wall)
+    if ((Blinky.move == MOVE_UP && !(Maze.Room[xp][yp].door & ROOM_DOOR_U)) ||
+        (Blinky.move == MOVE_RIGHT && !(Maze.Room[xp][yp].door & ROOM_DOOR_R)) ||
+        (Blinky.move == MOVE_DOWN && !(Maze.Room[xp][yp].door & ROOM_DOOR_D)) ||
+        (Blinky.move == MOVE_LEFT && !(Maze.Room[xp][yp].door & ROOM_DOOR_L))) {
+        // If the move is not possible, stop Blinky
+        Blinky.move = MOVE_STOP;
     }
 }

@@ -29,12 +29,12 @@ def main():
             if keyboard.is_pressed('left'):
                 ser.write(b"BUTTON: 4\r") 
                 print("Sent: BUTTON: 4")
-                time.sleep(0.2)
+                # time.sleep(0.2)
 
             if keyboard.is_pressed('right'):
                 ser.write(b"BUTTON: 2\r") 
                 print("Sent: BUTTON: 2")
-                time.sleep(0.2)
+                # time.sleep(0.2)
 
             if keyboard.is_pressed('up'):
                 ser.write(b"BUTTON: 1\r")  
@@ -44,7 +44,7 @@ def main():
             if keyboard.is_pressed('down'):
                 ser.write(b"BUTTON: 3\r")  
                 print("Sent: BUTTON: 3")
-                time.sleep(0.2)
+                # time.sleep(0.2)
 
             # Nghỉ một chút
             time.sleep(0.01)

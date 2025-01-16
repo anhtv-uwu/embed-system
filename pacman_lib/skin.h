@@ -141,6 +141,7 @@ typedef struct {
 //------------------------------------------------------------------------
 Skin_t Room_Skin[ROOM_SKIN_CNT];
 Skin_t Player_Skin[PLAYER_SKIN_CNT];
+
 Skin_t Blinky_Skin[GHOST_SKIN_CNT];
 Skin_t Pinky_Skin[GHOST_SKIN_CNT];
 Skin_t Inky_Skin[GHOST_SKIN_CNT];

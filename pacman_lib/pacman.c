@@ -114,7 +114,9 @@ void pacman_start(void) {
     pinky_init(GAME_OVER);
     inky_init(GAME_OVER);
     clyde_init(GAME_OVER);
-
+    if (Game.mode_2_player) {
+        Blinky.move = MOVE_STOP;
+    }
     // Gọi menu
     menu_start();
 
@@ -122,6 +124,7 @@ void pacman_start(void) {
     if (Game.debug_mode == 0) {
         skin_init();
     }
+
 
     pacman_set_level();
     maze_build();
@@ -228,16 +231,34 @@ void pacman_init(uint32_t mode) {
 void pacman_set_level(void) {
     if (Player.level <= GAME_MAX_LEVEL) {
         Player.akt_speed_ms = Level[Player.level - 1].player_speed;
-        Blinky.akt_speed_ms = Level[Player.level - 1].blinky_speed;
-        Pinky.akt_speed_ms = Level[Player.level - 1].pinky_speed;
-        Inky.akt_speed_ms = Level[Player.level - 1].inky_speed;
-        Clyde.akt_speed_ms = Level[Player.level - 1].clyde_speed;
+        if (Game.mode_2_player) {
+            Blinky.akt_speed_ms = Level[Player.level - 1].player_speed;
+            // Blinky.akt_speed_ms = -1;
+            // Pinky.akt_speed_ms = -1;
+            // Inky.akt_speed_ms = -1;
+            // Clyde.akt_speed_ms = -1;
+        }
+        else {
+            Blinky.akt_speed_ms = Level[Player.level - 1].blinky_speed;
+            Pinky.akt_speed_ms = Level[Player.level - 1].pinky_speed;
+            Inky.akt_speed_ms = Level[Player.level - 1].inky_speed;
+            Clyde.akt_speed_ms = Level[Player.level - 1].clyde_speed;
+        }
     } else {
         Player.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].player_speed;
-        Blinky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].blinky_speed;
-        Pinky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].pinky_speed;
-        Inky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].inky_speed;
-        Clyde.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].clyde_speed;
+        if (Game.mode_2_player) {
+            Blinky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].player_speed;
+            // Blinky.akt_speed_ms = -1;
+            // Pinky.akt_speed_ms = -1;
+            // Inky.akt_speed_ms = -1;  
+            // Clyde.akt_speed_ms = -1;
+        }
+        else {
+            Blinky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].blinky_speed;
+            Pinky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].pinky_speed;
+            Inky.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].inky_speed;
+            Clyde.akt_speed_ms = Level[GAME_MAX_LEVEL - 1].clyde_speed;
+        }
     }
 }
 
@@ -247,6 +268,7 @@ void pacman_set_level(void) {
 uint32_t pacman_play(void) {
     uint32_t ret_wert = GAME_RUN;
     uint32_t joy = GUI_JOY_NONE;
+    uint32_t joy_2_player = GUI_JOY_NONE;
     uint32_t movement = 0;
     int32_t pl_speed;
 
@@ -279,7 +301,6 @@ uint32_t pacman_play(void) {
             }
             movement |= MOVE_PLAYER;
         }
-
         //----------------------------------------
         // Blinky Timer
         //----------------------------------------
@@ -366,33 +387,46 @@ uint32_t pacman_play(void) {
             player_move();
             player_change_direction(joy);
         }
-
-        //----------------------------------------
-        // 2b. Blinky movement
-        //----------------------------------------
-        if ((movement & MOVE_BLINKY) != 0) {
-            blinky_move();
+        if (Game.mode_2_player) {
+            if ((movement & MOVE_BLINKY) != 0) {
+                char buf[10];
+                joy_2_player = gui_check_button();
+                // sprintf(buf, "joy_2_player = %d", joy_2_player);
+                // UB_Font_DrawString(10, 10, buf, & Arial_7x10, 0x0000, 0xFFFF);
+                
+                // blinky_move_2_player(joy_2_player);
+                // blinky_change_direction(joy_2_player);
+                blinky_move_2_player_2(joy_2_player);
+            }
         }
+        else {  
+            //----------------------------------------
+            // 2b. Blinky movement
+            //----------------------------------------
+            if ((movement & MOVE_BLINKY) != 0) {
+                blinky_move();
+            }
 
-        //----------------------------------------
-        // 2c. Pinky movement
-        //----------------------------------------
-        if ((movement & MOVE_PINKY) != 0) {
-            pinky_move();
-        }
+            //----------------------------------------
+            // 2c. Pinky movement
+            //----------------------------------------
+            if ((movement & MOVE_PINKY) != 0) {
+                pinky_move();
+            }
 
-        //----------------------------------------
-        // 2d. Inky movement
-        //----------------------------------------
-        if ((movement & MOVE_INKY) != 0) {
-            inky_move();
-        }
+            //----------------------------------------
+            // 2d. Inky movement
+            //----------------------------------------
+            if ((movement & MOVE_INKY) != 0) {
+                inky_move();
+            }
 
-        //----------------------------------------
-        // 2e. Clyde movement
-        //----------------------------------------
-        if ((movement & MOVE_CLYDE) != 0) {
-            clyde_move();
+            //----------------------------------------
+            // 2e. Clyde movement
+            //----------------------------------------
+            if ((movement & MOVE_CLYDE) != 0) {
+                clyde_move();
+            }
         }
 
         //----------------------------------------
