@@ -87,7 +87,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@8c87a8" ratio="0.7714581" ratioLeft="746" ratioRight="221" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@8c87a8" ratio="0.7121321" ratioLeft="992" ratioRight="401" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -245,7 +245,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/CooCox/CoIDE/workspace/embed-system/main.c" title="main.c" tooltip="C:/CooCox/CoIDE/workspace/embed-system/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="258" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="176" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_uart.c" partName="stm32_ub_uart.c" path="C:/CooCox/CoIDE/workspace/embed-system/ub_lib/stm32_ub_uart.c" title="stm32_ub_uart.c" tooltip="C:/CooCox/CoIDE/workspace/embed-system/ub_lib/stm32_ub_uart.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ub_lib/stm32_ub_uart.c"/>
@@ -332,7 +332,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@8c87a8" ratio="0.7714581" ratioLeft="746" ratioRight="221" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@8c87a8" ratio="0.80258435" ratioLeft="1118" ratioRight="275" relationship="4" relative="org.eclipse.ui.internal.ViewStack@c744e3">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -662,6 +662,9 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="blinky.c" tooltip="stm32f429/pacman_lib/blinky.c">
+<persistable path="/stm32f429/pacman_lib/blinky.c"/>
+</file>
 <file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_uart.h" tooltip="C:\CooCox\CoIDE\workspace\embed-system\ub_lib\stm32_ub_uart.h">
 <persistable path="C:\CooCox\CoIDE\workspace\embed-system\ub_lib\stm32_ub_uart.h" project="stm32f429"/>
 </file>
@@ -701,9 +704,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="clyde.c" tooltip="stm32f429/ubpacman_lib/clyde.c">
 <persistable path="/stm32f429/ubpacman_lib/clyde.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="inky.c" tooltip="stm32f429/ubpacman_lib/inky.c">
-<persistable path="/stm32f429/ubpacman_lib/inky.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinky.c" tooltip="stm32f429/ubpacman_lib/pinky.c">
 <persistable path="/stm32f429/ubpacman_lib/pinky.c"/>
