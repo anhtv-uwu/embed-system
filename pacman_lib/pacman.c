@@ -120,11 +120,7 @@ void pacman_start(void) {
     // Gọi menu
     menu_start();
 
-    // Nếu chưa bật debug_mode, khởi tạo skin
-    if (Game.debug_mode == 0) {
-        skin_init();
-    }
-
+    skin_init();
 
     pacman_set_level();
     maze_build();

@@ -30,7 +30,7 @@
 #define  MENUE_COL_OFF   RGB_COL_BLUE
 #define  MENUE_COL_VALUE RGB_COL_WHITE
 
-#define  MENUE_MAX_POS   3
+#define  MENUE_MAX_POS   2
 
 #define  MENUE_STARTX1   20
 #define  MENUE_STARTX2   150

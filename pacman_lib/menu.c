@@ -174,14 +174,14 @@ void menu_redraw(uint32_t aktpos) {
     yp += MENUE_DELTA1;
     UB_Font_DrawString(xp, yp, "Start level      : ", & Arial_7x10, c[0], BACKGROUND_COL);
 
-    yp += MENUE_DELTA1;
-    UB_Font_DrawString(xp, yp, "Debug", & Arial_7x10, c[1], BACKGROUND_COL);
+    // yp += MENUE_DELTA1;
+    // UB_Font_DrawString(xp, yp, "Debug", & Arial_7x10, c[1], BACKGROUND_COL);
 
     yp += MENUE_DELTA1;
-    UB_Font_DrawString(xp, yp, "Mode             : ", & Arial_7x10, c[2], BACKGROUND_COL);
+    UB_Font_DrawString(xp, yp, "Mode             : ", & Arial_7x10, c[1], BACKGROUND_COL);
 
     yp += MENUE_DELTA1 + MENUE_DELTA1;
-    UB_Font_DrawString(xp, yp, "Start", & Arial_7x10, c[3], BACKGROUND_COL);
+    UB_Font_DrawString(xp, yp, "Start", & Arial_7x10, c[2], BACKGROUND_COL);
 
 
 
@@ -194,7 +194,7 @@ void menu_redraw(uint32_t aktpos) {
     sprintf(buf, "%d ", (int)(Player.level));
     UB_Font_DrawString(xp, yp, buf, & Arial_7x10, MENUE_COL_VALUE, BACKGROUND_COL);
 
-    yp += 2*MENUE_DELTA1;
+    yp += MENUE_DELTA1;
     if (Game.mode_2_player == 0) {
         sprintf(buf, "%d ", 1);
     }
