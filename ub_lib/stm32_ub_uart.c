@@ -362,13 +362,13 @@ int UART_CheckButton(void)
       case '2': return 2;
       case '3': return 3;
       case '4': return 4;
-      default:  return -1;
+      default:  return 0;
     }
   }
   else if(rx_status == RX_FULL) {
-    return -1;
+    return 0;
   }
   else {
-    return -1;
+    return 0;
   }
 }
