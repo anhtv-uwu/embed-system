@@ -3,6 +3,7 @@
 #include "stm32_ub_font.h"
 
 #include "maze_generate.h"
+#include "maze_generate_random.h"
 
 void maze_make_rooms(void);
 void maze_set_skin(void);
@@ -13,7 +14,8 @@ void maze_count_dots(void);
 //--------------------------------------------------------------
 void maze_build(void) {
     // generate all rooms for the maze
-    maze_make_rooms();
+    //maze_make_rooms();
+    maze_make_rooms_random();
     // set skin for all rooms
     maze_set_skin();
     // count all dots in the maze (room with points)
