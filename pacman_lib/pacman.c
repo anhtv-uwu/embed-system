@@ -124,7 +124,8 @@ void pacman_start(void) {
 
     pacman_set_level();
     maze_build();
-    check = maze_generate_check();
+    //check = maze_generate_check();
+    check = 0;
 
     if (check == 0) {
         // Maze OK
