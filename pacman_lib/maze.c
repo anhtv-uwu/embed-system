@@ -8,9 +8,7 @@ void maze_make_rooms(int i);
 void maze_set_skin(int i);
 void maze_count_dots(void);
 
-//--------------------------------------------------------------
-// generate the maze
-//--------------------------------------------------------------
+
 void maze_build(void) {
     random_init();
     int i = get_randrange(1, 3);
@@ -22,17 +20,10 @@ void maze_build(void) {
     maze_count_dots();
 }
 
-//--------------------------------------------------------------
-// generate the complete maze (with standard skin)
-//--------------------------------------------------------------
+
 void maze_make_rooms(int i) {
     Room_t room;
 
-    //------------------------------
-    // 1. init all rooms as "WALL"
-    //    with no doors,no points
-    //    and standard "wall" skin
-    //------------------------------
     room.typ = ROOM_TYP_WALL;
     room.special = ROOM_SPEC_NONE;
     room.door = ROOM_DOOR_NONE;
@@ -99,7 +90,7 @@ void maze_make_rooms(int i) {
         maze_generate_digpath_v(26, 26, 4, ROOM_POINTS_NORMAL);
 
         //------------------------------
-        // 5. set special "PORTAL"
+        // 3. set special "PORTAL"
         //------------------------------
         room.typ = ROOM_TYP_WALL;
         room.special = ROOM_SPEC_PORTAL;
@@ -175,7 +166,7 @@ void maze_make_rooms(int i) {
         maze_generate_digpath_v(24, 20, 4, ROOM_POINTS_NORMAL);
 
         //------------------------------
-        // 5. set special "PORTAL"
+        // 3. set special "PORTAL"
         //------------------------------
         room.typ = ROOM_TYP_WALL;
         room.special = ROOM_SPEC_PORTAL;
@@ -243,7 +234,7 @@ void maze_make_rooms(int i) {
         maze_generate_digpath_v(15, 23, 4, ROOM_POINTS_NORMAL);
 
         //------------------------------
-        // 5. set special "PORTAL"
+        // 3. set special "PORTAL"
         //------------------------------
         room.typ = ROOM_TYP_WALL;
         room.special = ROOM_SPEC_PORTAL;
@@ -251,7 +242,7 @@ void maze_make_rooms(int i) {
     }
 
         //------------------------------
-        // 3. set all rooms with doors to "PATH"
+        // 4. set all rooms with doors to "PATH"
         //    and set standard "path" skin
         //------------------------------
         room.typ = ROOM_TYP_PATH;
@@ -261,7 +252,7 @@ void maze_make_rooms(int i) {
         
 
         //------------------------------
-        // 6. set special "GATE"
+        // 5. set special "GATE"
         //------------------------------
         room.special = ROOM_SPEC_GATE;
         room.door = (ROOM_BGATE_D | ROOM_PGATE_D | ROOM_IGATE_D | ROOM_CGATE_D);
@@ -286,14 +277,14 @@ void maze_make_rooms(int i) {
         maze_generate_setgate(13, 14, room, ROOM_DOOR_L);
 
         //------------------------------
-        // 8. clear manually two Points at the startfield
+        // 6. clear manually two Points at the startfield
         //------------------------------
 
         Maze.Room[13][23].points = ROOM_POINTS_NONE;
         Maze.Room[14][23].points = ROOM_POINTS_NONE;
 
         //------------------------------
-        // 9. choose 4 random rooms for the energy points
+        // 7. choose 4 random rooms for the energy points
         //------------------------------
         int count_energy = 0;
         while(count_energy < 4){
@@ -311,27 +302,19 @@ void maze_make_rooms(int i) {
     
 }
 
-//--------------------------------------------------------------
-// set the Skin for the complete maze
-//--------------------------------------------------------------
+
 void maze_set_skin(int i) {
     Room_t room;
 
-    //------------------------------
-    // 1. set all "PATH" Skins
-    //------------------------------
+    
     maze_generate_searchandset(SEARCH_SKIN_PATH, room);
 
-    //------------------------------
-    // 2. set automaticly all possible
-    //    outside wall skins
-    //------------------------------
+    
     maze_generate_setwallskin_outside();
 
     
     //------------------------------
-    // 3. set manually
-    //    outside wall skins
+    // 1. Set manually outside wall skins
     //------------------------------
     if(i == 1)
     {
@@ -423,8 +406,7 @@ void maze_set_skin(int i) {
     
 
     //------------------------------
-    // 5. set manually
-    //    walls of home base
+    // 2. set manually walls of home base
     //------------------------------
     maze_generate_setskin_h(10, 12, 1, ROOM_SKIN_WALL_I_TOPLEFT2);
     maze_generate_setskin_h(17, 12, 1, ROOM_SKIN_WALL_I_TOPRIGHT2);
@@ -438,22 +420,19 @@ void maze_set_skin(int i) {
     maze_generate_setskin_h(11, 16, 6, ROOM_SKIN_WALL_O_TOP);
 
     //------------------------------
-    // 6. set automaticly all possible
-    //    inside wall skins
+    // 3. set automaticly all possible inside wall skins
     //------------------------------
     maze_generate_setwallskin_inside();
 
     //------------------------------
-    // 7. set all "UNDEF" Walls to "Black"
+    // 4. set all "UNDEF" Walls to "Black"
     //------------------------------
     room.skin = ROOM_SKIN_WALL_BLACK;
     maze_generate_searchandset(SEARCH_SKIN_UNDEF, room);
 
 }
 
-//--------------------------------------------------------------
-// count all dots in the maze
-//--------------------------------------------------------------
+
 void maze_count_dots(void) {
     Maze.point_dots = maze_generate_count_dots();
 }

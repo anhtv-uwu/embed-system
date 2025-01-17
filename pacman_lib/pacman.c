@@ -1,6 +1,4 @@
-//--------------------------------------------------------------
-// Includes
-//--------------------------------------------------------------
+
 #include "pacman.h"
 
 #include <stdio.h>
@@ -265,7 +263,9 @@ void pacman_set_level(void) {
 uint32_t pacman_play(void) {
     uint32_t ret_wert = GAME_RUN;
     uint32_t joy = GUI_JOY_NONE;
+    uint32_t joy_check = GUI_JOY_NONE;
     uint32_t joy_2_player = GUI_JOY_NONE;
+    uint32_t joy_2_player_check = GUI_JOY_NONE;
     uint32_t movement = 0;
     int32_t pl_speed;
 
@@ -279,7 +279,10 @@ uint32_t pacman_play(void) {
         if (Gui_Touch_Timer_ms == 0) {
             Gui_Touch_Timer_ms = GUI_TOUCH_INTERVALL_MS;
 
-            joy = gui_check_button();
+            joy_check = gui_check_button();
+            if (joy_check != GUI_JOY_NONE){
+                joy = joy_check;
+            }
             // joy = gui_check_button_uart();
         }
         // joy = gui_check_button();
@@ -389,6 +392,9 @@ uint32_t pacman_play(void) {
             if ((movement & MOVE_BLINKY) != 0) {
                 // joy_2_player = gui_check_button();
                 joy_2_player = gui_check_button_uart();
+                // if (joy_2_player_check != GUI_JOY_NONE){
+                //     joy_2_player = joy_2_player_check;
+                // }
                 blinky_move_2_player_2(joy_2_player);
             }
         }

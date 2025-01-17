@@ -662,8 +662,9 @@ uint32_t gui_check_button_uart(void){
     ret_value = UART_CheckButton();
     if (old_button != ret_value) {
         old_button = ret_value;
-        GUI.refresh_buttons = GUI_REFRESH_VALUE;
+ //       GUI.refresh_buttons = GUI_REFRESH_VALUE;
     }
+    
     return ret_value;
 }
 

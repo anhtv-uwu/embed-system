@@ -1,15 +1,9 @@
-//--------------------------------------------------------------
-// Includes
-//--------------------------------------------------------------
 #include "maze_generate.h"
 
 void maze_generate_setonewallskin_outside(uint32_t x, uint32_t y, uint32_t r);
 void maze_generate_setonewallskin_inside(uint32_t x, uint32_t y);
 
-//--------------------------------------------------------------
-// search all rooms with a general mark
-// and set the room data
-//--------------------------------------------------------------
+
 void maze_generate_searchandset(uint32_t mark, Room_t room) {
     uint32_t x, y;
 
@@ -43,11 +37,7 @@ void maze_generate_searchandset(uint32_t mark, Room_t room) {
     }
 }
 
-//--------------------------------------------------------------
-// dig a path horizontal and set automaticly the doors and points
-// len>=2
-// 0=ok
-//--------------------------------------------------------------
+
 uint32_t maze_generate_digpath_h(uint32_t x, uint32_t y, uint32_t l, uint32_t p) {
     uint32_t ret_wert = 0;
     uint32_t n;
@@ -72,11 +62,7 @@ uint32_t maze_generate_digpath_h(uint32_t x, uint32_t y, uint32_t l, uint32_t p)
     return (ret_wert);
 }
 
-//--------------------------------------------------------------
-// dao 1 duong thang dung va tu dong dat ten cac cua va diem+
-// len>=2
-// 0=ok
-//--------------------------------------------------------------
+
 uint32_t maze_generate_digpath_v(uint32_t x, uint32_t y, uint32_t l, uint32_t p) {
     uint32_t ret_wert = 0;
     uint32_t n;
@@ -101,10 +87,7 @@ uint32_t maze_generate_digpath_v(uint32_t x, uint32_t y, uint32_t l, uint32_t p)
     return (ret_wert);
 }
 
-//--------------------------------------------------------------
-// set two rooms to special "portal" and add automaticly the doors
-// 0=ok
-//--------------------------------------------------------------
+
 uint32_t maze_generate_setportals(uint32_t x, uint32_t y, Room_t room) {
     uint32_t ret_wert = 0;
 
@@ -155,10 +138,7 @@ uint32_t maze_generate_setportals(uint32_t x, uint32_t y, Room_t room) {
     return (ret_wert);
 }
 
-//--------------------------------------------------------------
-// set one room to special "gate" and add automaticly the doors
-// 0=ok
-//--------------------------------------------------------------
+
 uint32_t maze_generate_setgate(uint32_t x, uint32_t y, Room_t room, uint32_t door) {
     uint32_t ret_wert = 0;
 
@@ -197,9 +177,7 @@ uint32_t maze_generate_setgate(uint32_t x, uint32_t y, Room_t room, uint32_t doo
     return (ret_wert);
 }
 
-//--------------------------------------------------------------
-// set automaticly the skin of the walls outside the maze
-//--------------------------------------------------------------
+
 void maze_generate_setwallskin_outside(void) {
     uint32_t x, y;
 
@@ -222,10 +200,7 @@ void maze_generate_setwallskin_outside(void) {
     }
 }
 
-//--------------------------------------------------------------
-// set automaticly the skin of one wall outside the maze
-// if not possible set to "UNDEF"
-//--------------------------------------------------------------
+
 void maze_generate_setonewallskin_outside(uint32_t x, uint32_t y, uint32_t r) {
     // default set to "BLANK"
     Maze.Room[x][y].skin = ROOM_SKIN_WALL_UNDEF;
@@ -254,9 +229,7 @@ void maze_generate_setonewallskin_outside(uint32_t x, uint32_t y, uint32_t r) {
     }
 }
 
-//--------------------------------------------------------------
-// set automaticly the skin of the walls inside the maze
-//--------------------------------------------------------------
+
 void maze_generate_setwallskin_inside(void) {
     uint32_t x, y;
 
@@ -269,10 +242,7 @@ void maze_generate_setwallskin_inside(void) {
     }
 }
 
-//--------------------------------------------------------------
-// set automaticly the skin of one wall inside the maze
-// if not possible set to "UNDEF"
-//--------------------------------------------------------------
+
 void maze_generate_setonewallskin_inside(uint32_t x, uint32_t y) {
     // default set to "BLANK"
     Maze.Room[x][y].skin = ROOM_SKIN_WALL_UNDEF;
@@ -309,11 +279,7 @@ void maze_generate_setonewallskin_inside(uint32_t x, uint32_t y) {
     }
 }
 
-//--------------------------------------------------------------
-// set manually the skin horizontal
-// len>=1
-// 0=ok
-//--------------------------------------------------------------
+
 uint32_t maze_generate_setskin_h(uint32_t x, uint32_t y, uint32_t l, uint32_t s) {
     uint32_t ret_wert = 0;
     uint32_t n;
@@ -330,11 +296,7 @@ uint32_t maze_generate_setskin_h(uint32_t x, uint32_t y, uint32_t l, uint32_t s)
     return (ret_wert);
 }
 
-//--------------------------------------------------------------
-// set manually the skin vertikal
-// len>=1
-// 0=ok
-//--------------------------------------------------------------
+
 uint32_t maze_generate_setskin_v(uint32_t x, uint32_t y, uint32_t l, uint32_t s) {
     uint32_t ret_wert = 0;
     uint32_t n;
@@ -351,11 +313,7 @@ uint32_t maze_generate_setskin_v(uint32_t x, uint32_t y, uint32_t l, uint32_t s)
     return (ret_wert);
 }
 
-//--------------------------------------------------------------
-// check the maze
-// 0=ok
-// >0 = last error nr
-//--------------------------------------------------------------
+
 uint32_t maze_generate_check(void) {
     uint32_t ret_wert = 0;
     uint32_t x, y;
@@ -465,9 +423,7 @@ uint32_t maze_generate_check(void) {
     return (ret_wert);
 }
 
-//--------------------------------------------------------------
-// count the rooms with points
-//--------------------------------------------------------------
+
 uint32_t maze_generate_count_dots(void) {
     uint32_t ret_wert = 0;
     uint32_t x, y;
