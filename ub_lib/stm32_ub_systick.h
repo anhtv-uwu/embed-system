@@ -23,6 +23,7 @@ uint32_t keyboard_timer;
 uint32_t  Gui_Touch_Timer_ms;
 uint32_t  Mode_Systic_Timer_ms;
 uint32_t  Player_Systick_Timer_ms;
+// uint32_t  Player2_Systick_Timer_ms;
 uint32_t  Blinky_Systic_Timer_ms;
 uint32_t  Pinky_Systic_Timer_ms;
 uint32_t  Inky_Systic_Timer_ms;

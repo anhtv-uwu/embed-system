@@ -2,6 +2,8 @@
 // Includes
 //--------------------------------------------------------------
 #include "stm32_ub_uart.h"
+#include <stddef.h>
+#include <string.h>
 
 
 
@@ -230,9 +232,9 @@ void USART1_IRQHandler(void) {
   uint16_t wert;
 
   if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET) {
-    // wenn ein Byte im Empfangspuffer steht
+    // khi một byte có trong bộ đệm nhận
     wert=USART_ReceiveData(USART1);
-    // Byte speichern
+    // lưu byte
     P_UART_RX_INT(USART1_IRQn,wert);
   }
 }
@@ -333,5 +335,40 @@ void USART8_IRQHandler(void) {
     wert=USART_ReceiveData(UART8);
     // Byte speichern
     P_UART_RX_INT(UART8_IRQn,wert);
+  }
+}
+
+int UART_CheckButton(void)
+{
+  char rx_buf[50]; 
+  UART_RXSTATUS_t rx_status;
+
+  // Đọc chuỗi từ UART (ví dụ COM1)
+  rx_status = UB_Uart_ReceiveString(COM1, rx_buf);
+
+
+  if(rx_status == RX_READY) {
+    char *ptr = strstr(rx_buf, "BUTTON: ");
+    if(ptr == NULL) {
+  
+      return -1;
+    }
+    // Nhảy qua cụm "BUTTON: "
+    ptr += strlen("BUTTON: ");
+
+    char c = ptr[0];
+    switch(c) {
+      case '1': return 1;
+      case '2': return 2;
+      case '3': return 3;
+      case '4': return 4;
+      default:  return -1;
+    }
+  }
+  else if(rx_status == RX_FULL) {
+    return -1;
+  }
+  else {
+    return -1;
   }
 }

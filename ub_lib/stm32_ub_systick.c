@@ -106,7 +106,7 @@ void SysTick_Handler(void)
     Systick_Delay--;
   }
 
-  // USB bearbeiten
+  // check usb
   akt_usb_status=UB_USB_HID_HOST_Do();
 
   // Keyboard Timer

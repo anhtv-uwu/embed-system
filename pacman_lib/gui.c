@@ -44,10 +44,15 @@ void gui_clear_bots(void) {
 //--------------------------------------------------------------
 void gui_draw_bots(void) {
     gui_draw_player();
-    gui_draw_blinky();
-    gui_draw_pinky();
-    gui_draw_inky();
-    gui_draw_clyde();
+    if (Game.mode_2_player == 1) {
+        gui_draw_blinky();
+    }
+    else{
+        gui_draw_blinky();
+        gui_draw_pinky();
+        gui_draw_inky();
+        gui_draw_clyde();
+    }
 }
 
 //--------------------------------------------------------------
@@ -499,9 +504,17 @@ void gui_draw_gui(uint32_t joy) {
             UB_Font_DrawString(10, 305, "level complete", & Arial_7x10, FONT_COL2, BACKGROUND_COL);
         } else if (Player.status == PLAYER_STATUS_DEAD) {
             if (Player.lives >= 2) {
-                UB_Font_DrawString(10, 305, "player lose", & Arial_7x10, FONT_COL2, BACKGROUND_COL);
+                if (Game.mode_2_player == 1) {
+                    UB_Font_DrawString(10, 305, "Player 1 lose", & Arial_7x10, FONT_COL2, BACKGROUND_COL);
+                } else {
+                    UB_Font_DrawString(10, 305, "player lose", & Arial_7x10, FONT_COL2, BACKGROUND_COL);
+                }
             } else {
-                UB_Font_DrawString(10, 305, "GAME OVER", & Arial_7x10, FONT_COL2, BACKGROUND_COL);
+                if (Game.mode_2_player == 1) {
+                    UB_Font_DrawString(10, 305, "Player 2 WIN", & Arial_7x10, FONT_COL2, BACKGROUND_COL);
+                } else {
+                    UB_Font_DrawString(10, 305, "GAME OVER", & Arial_7x10, FONT_COL2, BACKGROUND_COL);
+                }
             }
         }
     }
@@ -639,6 +652,19 @@ uint32_t gui_check_button(void) {
     }
 
     return (ret_wert);
+}
+
+
+uint32_t gui_check_button_uart(void){
+    uint32_t ret_value = GUI_JOY_NONE;
+    static uint32_t old_button = 999;
+
+    ret_value = UART_CheckButton();
+    if (old_button != ret_value) {
+        old_button = ret_value;
+        GUI.refresh_buttons = GUI_REFRESH_VALUE;
+    }
+    return ret_value;
 }
 
 // Check keyboard

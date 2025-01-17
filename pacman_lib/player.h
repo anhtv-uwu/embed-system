@@ -17,7 +17,7 @@
 
 //--------------------------------------------------------------
 #define  PLAYER_START_X     14
-#define  PLAYER_START_Y     23   
+#define  PLAYER_START_Y     23 
 
 //--------------------------------------------------------------
 #define  PLAYER_START_LIVES   3 // The number of live

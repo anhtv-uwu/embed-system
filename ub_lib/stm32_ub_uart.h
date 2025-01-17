@@ -80,14 +80,14 @@ typedef struct {
 //--------------------------------------------------------------
 // Defines fuer das Empfangen
 //--------------------------------------------------------------
-#define  RX_BUF_SIZE   50    // Grösse vom RX-Puffer in Bytes
+#define  RX_BUF_SIZE   50    // Grï¿½sse vom RX-Puffer in Bytes
 #define  RX_FIRST_CHR  0x20  // erstes erlaubte Zeichen (Ascii-Wert)
 #define  RX_LAST_CHR   0x7E  // letztes erlaubt Zeichen (Ascii-Wert)
 #define  RX_END_CHR    0x0D  // Endekennung (Ascii-Wert)
 
 
 //--------------------------------------------------------------
-// Struktur für UART_RX
+// Struktur fï¿½r UART_RX
 //--------------------------------------------------------------
 typedef struct {
   char rx_buffer[RX_BUF_SIZE]; // RX-Puffer
@@ -104,6 +104,7 @@ void UB_Uart_Init(void);
 void UB_Uart_SendByte(UART_NAME_t uart, uint16_t wert);
 void UB_Uart_SendString(UART_NAME_t uart, char *ptr, UART_LASTBYTE_t end_cmd);
 UART_RXSTATUS_t UB_Uart_ReceiveString(UART_NAME_t uart, char *ptr);
+int UART_CheckButton(void);
 
 
 
